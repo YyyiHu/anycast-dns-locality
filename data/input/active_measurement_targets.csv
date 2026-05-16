@@ -1,0 +1,21 @@
+ccTLD,zone,nameserver,ipv4,analysis_role
+.be,be,c.nsset.be,194.0.43.1,Measured comparison
+.be,be,y.nsset.be,120.29.253.8,Main
+.be,be,z.nsset.be,194.0.25.36,Main
+.nl,nl,ns1.dns.nl,194.0.28.53,Main
+.nl,nl,ns3.dns.nl,194.0.25.24,Main
+.nl,nl,ns4.dns.nl,185.159.199.200,Main
+.de,de,a.nic.de,194.0.0.53,Main
+.de,de,l.de.net,77.67.63.105,Measured comparison
+.de,de,n.de.net,194.146.107.6,Main
+.de,de,z.nic.de,194.246.96.1,Main
+.fr,fr,d.nic.fr,194.0.9.1,Main
+.fr,fr,f.ext.nic.fr,194.146.106.46,Main
+.fr,fr,g.ext.nic.fr,194.0.36.1,Main
+.cz,cz,a.ns.nic.cz,194.0.12.1,Main
+.cz,cz,b.ns.nic.cz,194.0.13.1,Main
+.cz,cz,c.ns.nic.cz,194.0.14.1,Main
+.cz,cz,d.ns.nic.cz,193.29.206.1,Main
+.at,at,j.ns.at,194.146.106.50,Main
+.at,at,r.ns.at,194.0.25.10,Main
+.at,at,ns2.univie.ac.at,192.92.125.2,Main
