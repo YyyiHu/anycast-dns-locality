@@ -1,152 +1,139 @@
 zone	ns_name	ipv4	soa_status	soa_aa	nsid	hostname_bind	id_server	soa_query_ms
-be	a.nsset.be.	194.0.6.1	NOERROR	yes	zaventem3.ns.prodng.dc3.be	zaventem3.ns.prodng.dc3.be	zaventem3.ns.prodng.dc3.be	60
-be	b.nsset.be.	194.0.37.1	NOERROR	yes	diegem1.ns.prodng.dc3.be	diegem1.ns.prodng.dc3.be	zaventem2.ns.prodng.dc3.be	61
-be	c.nsset.be.	194.0.43.1	NOERROR	yes	zaventem1.ns.prodng.dc3.be	zaventem1.ns.prodng.dc3.be	zaventem1.ns.prodng.dc3.be	56
-be	d.nsset.be.	194.0.44.1	NOERROR	yes	milano1.ns.prodng.dc3.be	milano1.ns.prodng.dc3.be	milano1.ns.prodng.dc3.be	72
-be	y.nsset.be.	120.29.253.8	NOERROR	yes	dns1.frpar1	dns1.gblon1	dns4.gblon1	123
-be	z.nsset.be.	194.0.25.36	NOERROR	yes	tld-all-amx1@53036	tld-all-sto1@53036	tld-all-sto1@53036	59
-nl	ns1.dns.nl.	194.0.28.53	NOERROR	yes	eqx-am-ns01-128214	eqx-am-ns01-128214	eqx-am-ns02-126191	58
-nl	ns3.dns.nl.	194.0.25.24	NOERROR	yes	tld-all-amx1@53024	tld-all-amx1@53024	tld-all-amx1@53024	136
-nl	ns4.dns.nl.	185.159.199.200	NOERROR	yes	LHR4	LHR4	LHR4	62
-de	a.nic.de.	194.0.0.53	NOERROR	yes	ns-2.de.nl1.knot	ns-2.de.nl1.knot	ns-2.de.nl1.knot	57
-de	f.nic.de.	81.91.164.5	NOERROR	yes	ns-1.de.nl2.knot	ns-2.de.nl2.knot	ns-2.de.nl2.knot	132
-de	l.de.net.	77.67.63.105	NOERROR	yes	ns-2.de.uk1.knot	ns-1.de.uk1.knot	ns-2.de.uk1.knot	63
-de	n.de.net.	194.146.107.6	NOERROR	yes	s3.amx	s3.amx	s3.amx	59
-de	s.de.net.	195.243.137.26	NOERROR	yes	ns-1.de.de10.knot	ns-1.de.de10.knot	ns-1.de.de10.knot	82
-de	z.nic.de.	194.246.96.1	NOERROR	yes	ns-2.de.de2.knot	ns-2.de.de2.knot	ns-2.de.de2.knot	131
-fr	d.nic.fr.	194.0.9.1	NOERROR	yes	dns.ams.nic.fr	dns.ams.nic.fr	dns.ams.nic.fr	55
-fr	f.ext.nic.fr.	194.146.106.46	NOERROR	yes	s2.amx	s2.amx	s2.amx	57
-fr	g.ext.nic.fr.	194.0.36.1	NOERROR	yes	5.ams.pch	2.ams.pch	6.ams.pch	53
-cz	a.ns.nic.cz.	194.0.12.1	NOERROR	yes	dns-decix-dns02.nic.cz			67
-cz	b.ns.nic.cz.	194.0.13.1	NOERROR	yes	dns-decix-dns01.nic.cz			59
-cz	c.ns.nic.cz.	194.0.14.1	NOERROR	yes	dns-linx-dns03.nic.cz		dns-linx-dns03.nic.cz	60
-cz	d.ns.nic.cz.	193.29.206.1	NOERROR	yes	dns-linx-dns03.nic.cz		dns-linx-dns03.nic.cz	63
+be	a.nsset.be.	194.0.6.1	NOERROR	yes	zaventem3.ns.prodng.dc3.be	zaventem3.ns.prodng.dc3.be	zaventem3.ns.prodng.dc3.be	25
+be	b.nsset.be.	194.0.37.1	NOERROR	yes	diegem1.ns.prodng.dc3.be	zaventem2.ns.prodng.dc3.be	zaventem2.ns.prodng.dc3.be	22
+be	c.nsset.be.	194.0.43.1	NOERROR	yes	zaventem1.ns.prodng.dc3.be	zaventem1.ns.prodng.dc3.be	zaventem1.ns.prodng.dc3.be	18
+be	d.nsset.be.	194.0.44.1	NOERROR	yes	milano1.ns.prodng.dc3.be	milano1.ns.prodng.dc3.be	milano1.ns.prodng.dc3.be	37
+be	y.nsset.be.	120.29.253.8	NOERROR	yes	dns3.frpar1	dns2.frpar1	dns4.frpar1	34
+be	z.nsset.be.	194.0.25.36	NOERROR	yes	tld-all-sto1@53036	tld-all-amx1@53036	tld-all-sto1@53036	45
+nl	ns1.dns.nl.	194.0.28.53	NOERROR	yes	eqx-am-ns02-126191	eqx-am-ns01-128214	eqx-am-ns01-128214	23
+nl	ns3.dns.nl.	194.0.25.24	NOERROR	yes	tld-all-sto1@53024	tld-all-amx1@53024	tld-all-sto1@53024	42
+nl	ns4.dns.nl.	185.159.199.200	NOERROR	yes	FRA2	FRA1	FRA2	23
+de	a.nic.de.	194.0.0.53	NOERROR	yes	ns-1.de.nl1.knot	ns-1.de.nl1.knot	ns-2.de.nl1.knot	20
+de	f.nic.de.	81.91.164.5	NOERROR	yes	ns-2.de.nl2.knot	ns-2.de.nl2.knot	ns-2.de.nl2.knot	23
+de	l.de.net.	77.67.63.105	NOERROR	yes	ns-1.de.uk1.knot	ns-2.de.uk1.knot	ns-2.de.uk1.knot	25
+de	n.de.net.	194.146.107.6	NOERROR	yes	s3.amx	s3.amx	s3.amx	19
+de	s.de.net.	195.243.137.26	NOERROR	yes	ns-1.de.de10.knot	ns-1.de.de10.knot	ns-1.de.de10.knot	45
+de	z.nic.de.	194.246.96.1	NOERROR	yes	ns-1.de.de2.knot	ns-2.de.de2.knot	ns-2.de.de2.knot	28
+fr	d.nic.fr.	194.0.9.1	NOERROR	yes	dns.ams.nic.fr	dns.ams.nic.fr	dns.ams.nic.fr	22
+fr	f.ext.nic.fr.	194.146.106.46	NOERROR	yes	s2.amx	s2.amx	s2.amx	23
+fr	g.ext.nic.fr.	194.0.36.1	NOERROR	yes	3.ams.pch	5.ams.pch	6.ams.pch	19
+cz	a.ns.nic.cz.	194.0.12.1	NOERROR	yes	dns-decix-dns03.nic.cz			25
+cz	b.ns.nic.cz.	194.0.13.1	NOERROR	yes	dns-decix-dns01.nic.cz			23
+cz	c.ns.nic.cz.	194.0.14.1	NOERROR	yes	dns-linx-dns03.nic.cz		dns-linx-dns03.nic.cz	27
+cz	d.ns.nic.cz.	193.29.206.1	NOERROR	yes	dns-linx-dns03.nic.cz		dns-linx-dns03.nic.cz	32
 fi	a.fi.	193.166.4.1	NOERROR	yes		Ficora	Ficora	44
-fi	b.fi.	194.146.106.26	NOERROR	yes	s2.amx	s2.amx	s2.amx	17
-fi	c.fi.	194.0.11.104	NOERROR	yes	ns-1.fi.nl1.bind	ns-1.fi.nl1.bind	ns-2.fi.nl1.bind	109
-fi	d.fi.	77.72.229.253	NOERROR	yes	u1.stu	u1.sub	u1.stu	40
-fi	e.fi.	194.0.1.14	NOERROR	yes		NORM 001999-20D893		92
-fi	f.fi.	80.248.170.230	NOERROR	yes	FFI1	f.fi1	f.fi1	82
-fi	g.fi.	204.61.216.98	NOERROR	yes	6.ams.pch	3.ams.pch	4.ams.pch	128
-fi	i.fi.	194.0.25.30	NOERROR	yes	tld-all-amx1@53030	tld-all-amx1@53030	tld-all-amx1@53030	60
-fi	j.fi.	185.159.199.190	NOERROR	yes	FRA1	FRA2	FRA1	60
-fi	k.fi.	213.186.229.226	NOERROR	yes		hki	hki	168
-se	a.ns.se.	192.36.144.107	NOERROR	yes	u1.stu	u1.stu	u1.stu	78
-se	b.ns.se.	192.36.133.107	NOERROR	yes	u1.gbg	u1.gbg	u1.gbg	127
-se	c.ns.se.	192.36.135.107	NOERROR	yes	u1.sva	u1.sva	u1.svl	79
-se	f.ns.se.	192.36.134.97	NOERROR	yes	u1.mmx	u1.mma	u1.mmx	87
-se	g.ns.se.	194.68.134.97	NOERROR	yes	u1.lla	u1.llb	u1.llb	85
-se	i.ns.se.	194.146.106.22	NOERROR	yes	s2.amx	s2.amx	s2.amx	55
-se	m.ns.se.	194.0.11.112	NOERROR	yes	ns-1.se.nl1.bind	ns-1.se.nl1.bind	ns-1.se.nl1.bind	100
-se	x.ns.se.	213.108.25.4	NOERROR	yes	tldns02-prd.iis.se	tldns02-prd.iis.se	tldns02-prd.iis.se	73
-se	y.ns.se.	185.159.197.150	NOERROR	yes	LHR3	LHR4	LHR3	64
-se	z.ns.se.	185.159.198.150	NOERROR	yes	FRA2	FRA2	FRA2	62
-dk	b.nic.dk.	193.163.102.222	NOERROR	yes		nic-b3.prod.dkhm.dk		106
-dk	c.nic.dk.	185.159.199.45	NOERROR	yes	LHR4	FRA2	FRA2	61
-dk	h.nic.dk.	46.30.126.214	NOERROR	yes		h.nic.dk	h.nic.dk	64
-dk	l.nic.dk.	130.226.213.138	NOERROR	yes	nic-l2.prod.dkhm.dk	nic-l2.prod.dkhm.dk	nic-l2.prod.dkhm.dk	66
-dk	s.nic.dk.	194.0.28.7	NOERROR	yes	eqx-am-ns01-128214	eqx-am-ns02-126191	eqx-am-ns02-126191	63
-dk	t.nic.dk.	185.43.134.16	NOERROR	yes	dns-decix-dns01.nic.cz			67
-pl	a-dns.pl.	192.102.225.53	NOERROR	yes	a-bsk		a-atm	81
-pl	b-dns.pl.	192.195.72.53	NOERROR	yes	b-beyond		b-beyond	74
-pl	d-dns.pl.	185.159.197.48	NOERROR	yes	LHR3	LHR3	LHR4	58
-pl	f-dns.pl.	194.0.25.29	NOERROR	yes	tld-all-sto1@53029	tld-all-sto1@53029	tld-all-amx1@53029	72
-pl	h-dns.pl.	185.159.198.48	NOERROR	yes	FRA1	FRA2	FRA2	60
-pl	j-dns.pl.	204.61.217.4	NOERROR	yes	5.ams.pch	4.ams.pch	4.ams.pch	55
-it	a.dns.it.	194.0.16.215	NOERROR	yes		dns		74
-it	dns.nic.it.	192.12.192.5	NOERROR	yes		dns		74
-it	m.dns.it.	217.29.76.4	NOERROR	yes		m		137
-it	nameserver.cnr.it.	194.119.192.34	NOERROR	yes		nameserver		173
-it	r.dns.it.	193.206.141.46	NOERROR	yes		r		83
-it	v.dns.it.	194.0.25.44	NOERROR	yes	tld-all-amx1@53044	tld-all-amx1@53044	tld-all-amx1@53044	61
-es	a.nic.es.	194.69.254.1	NOERROR	yes		ns02.datos		93
-es	c.nic.es.	194.0.34.53	NOERROR	yes	LHR4	LHR4	FRA2	61
-es	g.nic.es.	204.61.217.1	NOERROR	yes	1.ams.pch	4.ams.pch	1.ams.pch	57
-es	h.nic.es.	194.0.33.53	NOERROR	yes	ns-2.es.de2.bind	ns-2.es.de2.bind	ns-2.es.de2.bind	153
-at	d.ns.at.	81.91.161.98	NOERROR	yes	id-d-FRA-02-at	d2	id-d-FRA-02-at	150
-at	j.ns.at.	194.146.106.50	NOERROR	yes	s2.amx	s2.amx	s2.amx	61
-at	n.ns.at.	81.91.173.130	NOERROR	yes	id-n-AMS-02-at	id-n-AMS-02-at	id-n-AMS-02-at	53
-at	ns1.univie.ac.at.	78.104.144.2	NOERROR	yes	id-01-NIG-02-at	id-01-NIG-02-at	id-01-NIG-02-at	68
-at	ns2.univie.ac.at.	192.92.125.2	NOERROR	yes	id-02-FRA-05-at	ns2e	id-02-FRA-05-at	136
-at	r.ns.at.	194.0.25.10	NOERROR	yes	tld-all-amx1@53010	tld-all-amx1@53010	tld-all-amx1@53010	55
-at	u.ns.at.	185.102.12.2	NOERROR	yes	id-u-LON-02-at	id-u-LON-02-at	id-u-LON-02-at	69
-ie	a.ns.ie.	77.72.72.40	NOERROR	yes		a.ns.ie		79
-ie	c.ns.ie.	194.146.106.98	NOERROR	yes	s2.amx	s2.amx	s2.amx	57
-ie	d.ns.ie.	77.72.229.245	NOERROR	yes	u1.stu	u1.stu	u1.stu	77
-ie	e.ns.ie.	185.159.199.210	NOERROR	yes	FRA1	LHR3	FRA1	66
-ie	h.ns.ie.	192.93.0.4	NOERROR	yes	ns2.th2.nic.fr	ns2.th2.nic.fr	ns2.th2.nic.fr	78
-ie	i.ns.ie.	194.0.25.35	NOERROR	yes	tld-all-amx1@53035	tld-all-sto1@53035	tld-all-amx1@53035	58
-pt	a.dns.pt.	185.39.208.1	NOERROR	yes		none		99
-pt	b.dns.pt.	194.0.25.23	NOERROR	yes	tld-all-amx1@53023	tld-all-amx1@53023	tld-all-amx1@53023	58
-pt	c.dns.pt.	204.61.216.105	NOERROR	yes	4.ams.pch	1.ams.pch	3.ams.pch	54
-pt	d.dns.pt.	185.39.210.1	NOERROR	yes		none		88
-pt	e.dns.pt.	193.136.192.64	NOERROR	yes		none		98
-pt	g.dns.pt.	193.136.2.226	NOERROR	yes		ns2.dns.pt		102
-pt	h.dns.pt.	194.146.106.138	NOERROR	yes	s2.amx	s2.amx	s2.amx	55
-pt	ns.dns.br.	200.160.0.5	NOERROR	yes	ns.dns.br	ns.dns.br	ns.dns.br	351
-pt	ns2.nic.fr.	192.93.0.4	NOERROR	yes	ns2.th2.nic.fr	ns2.th2.nic.fr	ns2.th2.nic.fr	81
-gr	estia.ics.forth.gr.	139.91.191.3	NOERROR	yes		estia.ics.forth.gr		120
-gr	gr-at.ics.forth.gr.	78.104.145.227	NOERROR	yes		CHAOS is verionless	CHAOS is verionless	77
-gr	gr-c.ics.forth.gr.	194.0.1.25	NOERROR	yes		NORM 001999-20D893		131
-gr	gr-d.ics.forth.gr.	194.0.11.102	NOERROR	yes	ns-1.gr.nl1.bind	ns-1.gr.nl1.bind	ns-2.gr.nl1.bind	59
-gr	gr-m.ics.forth.gr.	194.0.4.10	NOERROR	yes	m-br.ics.forth.gr	m-us	m-us.ics.forth.gr	271
-gr	grdns.ics.forth.gr.	139.91.1.1	NOERROR	yes		grdns		115
-at	d.ns.at.	81.91.161.98	NOERROR	yes	id-d-FRA-02-at	d2	id-d-FRA-02-at	65
-at	j.ns.at.	194.146.106.50	NOERROR	yes	s2.amx	s2.amx	s2.amx	54
-at	n.ns.at.	81.91.173.130	NOERROR	yes	id-n-AMS-02-at	id-n-AMS-02-at	id-n-AMS-02-at	53
-at	ns1.univie.ac.at.	78.104.144.2	NOERROR	yes	id-01-NIG-02-at	id-01-NIG-02-at	id-01-NIG-02-at	69
-at	ns2.univie.ac.at.	192.92.125.2	NOERROR	yes	id-02-FRA-05-at	ns2e	id-02-FRA-05-at	67
-at	r.ns.at.	194.0.25.10	NOERROR	yes	tld-all-sto1@53010	tld-all-amx1@53010	tld-all-amx1@53010	88
-at	u.ns.at.	185.102.12.2	NOERROR	yes	id-u-LON-02-at	id-u-LON-02-at	id-u-LON-02-at	72
-pl	a-dns.pl.	192.102.225.53	NOERROR	yes	a-wrx		a-bsk	84
-pl	b-dns.pl.	192.195.72.53	NOERROR	yes	b-beyond		b-beyond	79
-pl	d-dns.pl.	185.159.197.48	NOERROR	yes	LHR4	LHR4	LHR3	59
-pl	f-dns.pl.	194.0.25.29	NOERROR	yes	tld-all-sto1@53029	tld-all-amx1@53029	tld-all-sto1@53029	173
-pl	h-dns.pl.	185.159.198.48	NOERROR	yes	FRA1	FRA1	FRA2	151
-pl	j-dns.pl.	204.61.217.4	NOERROR	yes	2.ams.pch	6.ams.pch	1.ams.pch	55
-ro	dns-at.rotld.ro.	78.104.145.6	NOERROR	yes	dns-at.rotld.ro	ro-dns	dns-at.rotld.ro	79
-ro	dns-c.rotld.ro.	194.0.11.113	NOERROR	yes	ns-1.ro.nl1.bind	ns-2.ro.nl1.bind	ns-2.ro.nl1.bind	55
+fi	b.fi.	194.146.106.26	NOERROR	yes	s2.amx	s2.amx	s2.amx	21
+fi	c.fi.	194.0.11.104	NOERROR	yes	ns-2.fi.nl1.bind	ns-2.fi.nl1.bind	ns-2.fi.nl1.bind	22
+fi	d.fi.	77.72.229.253	NOERROR	yes	u1.sub	u1.sub	u1.stu	40
+fi	e.fi.	194.0.1.14	NOERROR	yes		NORM 001999-20D893		49
+fi	f.fi.	80.248.170.230	NOERROR	yes	FFI1	f.fi1	f.fi1	44
+fi	g.fi.	204.61.216.98	NOERROR	yes	5.ams.pch	3.ams.pch	5.ams.pch	23
+fi	i.fi.	194.0.25.30	NOERROR	yes	tld-all-sto1@53030	tld-all-amx1@53030	tld-all-amx1@53030	44
+fi	j.fi.	185.159.199.190	NOERROR	yes	FRA2	LHR4	FRA1	26
+fi	k.fi.	213.186.229.226	NOERROR	yes		hki	hki	49
+se	a.ns.se.	192.36.144.107	NOERROR	yes	u1.sub	u1.sub	u1.stu	42
+se	b.ns.se.	192.36.133.107	NOERROR	yes	u1.gbu	u1.gbg	u1.gbg	36
+se	c.ns.se.	192.36.135.107	NOERROR	yes	u1.svl	u1.svl	u1.svl	43
+se	f.ns.se.	192.36.134.97	NOERROR	yes	u1.mmx	u1.mma	u1.mmx	53
+se	g.ns.se.	194.68.134.97	NOERROR	yes	u1.llb	u1.lla	u1.llb	51
+se	i.ns.se.	194.146.106.22	NOERROR	yes	s2.amx	s2.amx	s2.amx	21
+se	m.ns.se.	194.0.11.112	NOERROR	yes	ns-1.se.nl1.bind	ns-2.se.nl1.bind	ns-1.se.nl1.bind	20
+se	x.ns.se.	213.108.25.4	NOERROR	yes	tldns02-prd.iis.se	tldns02-prd.iis.se	tldns02-prd.iis.se	44
+se	y.ns.se.	185.159.197.150	NOERROR	yes	LHR3	LHR4	LHR4	31
+se	z.ns.se.	185.159.198.150	NOERROR	yes	FRA2	FRA1	FRA1	26
+dk	b.nic.dk.	193.163.102.222	NOERROR	yes		nic-b3.prod.dkhm.dk		35
+dk	c.nic.dk.	185.159.199.45	NOERROR	yes	LHR4	FRA1	FRA2	25
+dk	h.nic.dk.	46.30.126.214	NOERROR	yes		h.nic.dk	h.nic.dk	31
+dk	l.nic.dk.	130.226.213.138	NOERROR	yes	nic-l2.prod.dkhm.dk	nic-l2.prod.dkhm.dk	nic-l2.prod.dkhm.dk	30
+dk	s.nic.dk.	194.0.28.7	NOERROR	yes	eqx-am-ns02-126191	eqx-am-ns02-126191	eqx-am-ns02-126191	16
+dk	t.nic.dk.	185.43.134.16	NOERROR	yes	dns-decix-dns02.nic.cz			30
+pl	a-dns.pl.	192.102.225.53	NOERROR	yes	a-atm		a-atm	34
+pl	b-dns.pl.	192.195.72.53	NOERROR	yes	b-beyond		b-beyond	37
+pl	d-dns.pl.	185.159.197.48	NOERROR	yes	LHR4	LHR4	LHR4	23
+pl	f-dns.pl.	194.0.25.29	NOERROR	yes	tld-all-amx1@53029	tld-all-amx1@53029	tld-all-sto1@53029	18
+pl	h-dns.pl.	185.159.198.48	NOERROR	yes	FRA1	FRA2	FRA2	25
+pl	j-dns.pl.	204.61.217.4	NOERROR	yes	5.ams.pch	2.ams.pch	4.ams.pch	22
+it	a.dns.it.	194.0.16.215	NOERROR	yes		dns		30
+it	dns.nic.it.	192.12.192.5	NOERROR	yes		dns		48
+it	m.dns.it.	217.29.76.4	NOERROR	yes		m		35
+it	nameserver.cnr.it.	194.119.192.34	NOERROR	yes		nameserver		53
+it	r.dns.it.	193.206.141.46	NOERROR	yes		r		44
+it	v.dns.it.	194.0.25.44	NOERROR	yes	tld-all-amx1@53044	tld-all-amx1@53044	tld-all-sto1@53044	22
+es	a.nic.es.	194.69.254.1	NOERROR	yes		ns02.datos		57
+es	c.nic.es.	194.0.34.53	NOERROR	yes	FRA2	FRA2	FRA1	24
+es	g.nic.es.	204.61.217.1	NOERROR	yes	4.ams.pch	4.ams.pch	4.ams.pch	21
+es	h.nic.es.	194.0.33.53	NOERROR	yes	ns-2.es.de2.bind	ns-1.es.de2.bind	ns-2.es.de2.bind	24
+at	d.ns.at.	81.91.161.98	NOERROR	yes	id-d-FRA-02-at	d2	id-d-FRA-02-at	26
+at	j.ns.at.	194.146.106.50	NOERROR	yes	s2.amx	s2.amx	s2.amx	18
+at	n.ns.at.	81.91.173.130	NOERROR	yes	id-n-AMS-02-at	id-n-AMS-02-at	id-n-AMS-02-at	19
+at	ns1.univie.ac.at.	78.104.144.2	NOERROR	yes	id-01-NIG-02-at	id-01-NIG-02-at	id-01-NIG-02-at	39
+at	ns2.univie.ac.at.	192.92.125.2	NOERROR	yes	id-02-FRA-05-at	ns2e	id-02-FRA-05-at	30
+at	r.ns.at.	194.0.25.10	NOERROR	yes	tld-all-amx1@53010	tld-all-sto1@53010	tld-all-amx1@53010	21
+at	u.ns.at.	185.102.12.2	NOERROR	yes	id-u-LON-02-at	id-u-LON-02-at	id-u-LON-02-at	23
+ie	a.ns.ie.	77.72.72.40	NOERROR	yes		a.ns.ie		40
+ie	c.ns.ie.	194.146.106.98	NOERROR	yes	s2.amx	s2.amx	s2.amx	24
+ie	d.ns.ie.	77.72.229.245	NOERROR	yes	u1.sub	u1.stu	u1.stu	43
+ie	e.ns.ie.	185.159.199.210	NOERROR	yes	LHR4	LHR4	FRA2	21
+ie	h.ns.ie.	192.93.0.4	NOERROR	yes	ns2.th2.nic.fr	ns2.th2.nic.fr	ns2.th2.nic.fr	34
+ie	i.ns.ie.	194.0.25.35	NOERROR	yes	tld-all-sto1@53035	tld-all-amx1@53035	tld-all-amx1@53035	46
+pt	a.dns.pt.	185.39.208.1	NOERROR	yes		none		70
+pt	b.dns.pt.	194.0.25.23	NOERROR	yes	tld-all-amx1@53023	tld-all-amx1@53023	tld-all-amx1@53023	23
+pt	c.dns.pt.	204.61.216.105	NOERROR	yes	4.ams.pch	1.ams.pch	6.ams.pch	24
+pt	d.dns.pt.	185.39.210.1	NOERROR	yes		none		57
+pt	e.dns.pt.	193.136.192.64	NOERROR	yes		none		66
+pt	g.dns.pt.	193.136.2.226	NOERROR	yes		ns2.dns.pt		64
+pt	h.dns.pt.	194.146.106.138	NOERROR	yes	s2.amx	s2.amx	s2.amx	19
+pt	ns.dns.br.	200.160.0.5	NOERROR	yes	ns.dns.br	ns.dns.br	ns.dns.br	240
+pt	ns2.nic.fr.	192.93.0.4		no		ns2.th2.nic.fr	ns2.th2.nic.fr	
+gr	estia.ics.forth.gr.	139.91.191.3	NOERROR	yes		estia.ics.forth.gr		82
+gr	gr-at.ics.forth.gr.	78.104.145.227	NOERROR	yes		CHAOS is verionless	CHAOS is verionless	36
+gr	gr-c.ics.forth.gr.	194.0.1.25	NOERROR	yes		NORM 001999-20D893		51
+gr	gr-d.ics.forth.gr.	194.0.11.102	NOERROR	yes	ns-2.gr.nl1.bind		ns-1.gr.nl1.bind	25
+gr	gr-m.ics.forth.gr.	194.0.4.10	NOERROR	yes	m-us.ics.forth.gr	m-us	m-us.ics.forth.gr	171
+gr	grdns.ics.forth.gr.	139.91.1.1	NOERROR	yes		grdns		80
+ro	dns-at.rotld.ro.	78.104.145.6	NOERROR	yes	dns-at.rotld.ro	ro-dns	dns-at.rotld.ro	36
+ro	dns-c.rotld.ro.	194.0.11.113	NOERROR	yes	ns-1.ro.nl1.bind	ns-2.ro.nl1.bind	ns-1.ro.nl1.bind	17
 ro	dns-ro.denic.de.	81.91.161.99		no				
-ro	primary.rotld.ro.	192.162.16.18	NOERROR	yes		primary.rotld.ro		100
-ro	sec-dns-a.rotld.ro.	192.162.16.20	NOERROR	yes		sec-dns-a.rotld.ro		100
-ro	sec-dns-b.rotld.ro.	193.230.31.230	NOERROR	yes		sec-dns-b.rotld.ro		98
-hu	a.hu.	5.28.0.97	NOERROR	yes		a.hu		74
-hu	b.hu.	193.41.82.18	NOERROR	yes		MZ/Y 2022	MZ/Y 2022	155
-hu	c.hu.	195.111.1.92	NOERROR	yes		c.hu		83
-hu	d.hu.	5.28.0.99	NOERROR	yes		MZ/Y 2022	MZ/Y 2022	74
-hu	e.hu.	194.0.25.11	NOERROR	yes	tld-all-amx1@53011	tld-all-sto1@53011	tld-all-sto1@53011	52
-hu	f.hu.	194.0.9.1	NOERROR	yes	dns.ams.nic.fr	dns.ams.nic.fr	dns.ams.nic.fr	58
-hu	p.hu.	204.61.216.146	NOERROR	yes	5.ams.pch	1.ams.pch	6.ams.pch	57
-sk	e.tld.sk.	194.169.218.16	NOERROR	yes	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	161
-sk	f.tld.sk.	185.24.64.16	NOERROR	yes	PDUS-VJ5JVS-CTI2KM	MBBQ-HL0WP7-P2BCQ3	MBBQ-HL0WP7-P2BCQ3	66
-sk	g.tld.sk.	212.18.248.16	NOERROR	yes	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	151
-sk	h.tld.sk.	212.18.249.16	NOERROR	yes	MBBQ-HL0WP7-P2BCQ3	MBBQ-HL0WP7-P2BCQ3	MBBQ-HL0WP7-P2BCQ3	56
-si	b.dns.si.	153.5.81.140	NOERROR	yes		srebrnjak.register.si	srebrnjak.register.si	77
-si	f.dns.si.	194.146.106.62	NOERROR	yes	s2.amx	s2.amx	s2.amx	56
-si	h.dns.si.	204.61.216.54	NOERROR	yes	5.ams.pch	1.ams.pch	6.ams.pch	57
-si	i.dns.si.	194.0.25.22	NOERROR	yes	tld-all-amx1@53022	tld-all-amx1@53022	tld-all-amx1@53022	52
-si	k.dns.si.	185.159.197.11	NOERROR	yes	LHR3	LHR3	LHR3	67
-si	l.dns.si.	185.159.198.11	NOERROR	yes	FRA2	FRA2	FRA1	59
-ee	b.tld.ee.	194.146.106.110	NOERROR	yes	s2.amx	s2.amx	s2.amx	54
-ee	e.tld.ee.	204.61.216.36	NOERROR	yes	4.ams.pch	1.ams.pch	5.ams.pch	141
-ee	ee.cert.ee.	46.226.142.147	NOERROR	yes	ee_cert_ee			81
-ee	ee.eenet.ee.	193.40.132.5	NOERROR	yes		eenet-n4		83
-ee	ns.tld.ee.	195.43.87.10	NOERROR	yes	dns-tld-n2.infra.tld.ee	dns-tld-n2	dns-tld-n2	97
-lv	a.nic.lv.	194.0.48.1	NOERROR	yes	a-riga		a-sanp	85
-lv	b.nic.lv.	92.240.70.1	NOERROR	yes	b-nic		b-nic	83
-lv	c.nic.lv.	185.159.199.140	NOERROR	yes	FRA1	LHR3	LHR3	61
-lv	d.nic.lv.	194.0.8.1	NOERROR	yes	ac-valm		ac-sanp	94
-lv	n.nic.lv.	194.146.106.150	NOERROR	yes	s2.amx	s2.amx	s2.amx	56
-lv	nu.nic.lv.	77.72.229.249	NOERROR	yes	u1.stu	u1.sub	u1.sub	81
-lv	sunic.sunet.se.	192.36.125.2	NOERROR	yes				81
-lt	a.tld.lt.	185.150.40.131	NOERROR	yes	AD	AD	AD	99
-lt	b.tld.lt.	194.0.20.1	NOERROR	yes	BB	BB	BB	88
-lt	d.tld.lt.	194.0.3.1	NOERROR	yes		DT	DT	91
-lt	e.tld.lt.	194.0.18.1	NOERROR	yes		DLJ	DLJ	98
-lt	f.tld.lt.	194.0.19.1	NOERROR	yes		PHX	PHX	72
-lt	r.tld.lt.	194.0.25.46	NOERROR	yes	tld-all-sto1@53046	tld-all-amx1@53046	tld-all-sto1@53046	77
-eu	be.dns.eu.	149.38.1.26	NOERROR	yes				127
-eu	si.dns.eu.	193.2.221.62	NOERROR	yes				80
-eu	w.dns.eu.	194.0.25.28	NOERROR	yes	tld-all-sto1@53028	tld-all-amx1@53028	tld-all-amx1@53028	83
-eu	x.dns.eu.	185.151.141.1	NOERROR	yes	ns-2.eu.nl1.bind	ns-1.eu.nl1.bind	ns-2.eu.nl1.bind	59
-eu	y.dns.eu.	194.146.106.90	NOERROR	yes	s2.amx	s2.amx	s2.amx	111
+ro	primary.rotld.ro.	192.162.16.18	NOERROR	yes		primary.rotld.ro		65
+ro	sec-dns-a.rotld.ro.	192.162.16.20	NOERROR	yes		sec-dns-a.rotld.ro		60
+ro	sec-dns-b.rotld.ro.	193.230.31.230	NOERROR	yes		sec-dns-b.rotld.ro		61
+hu	a.hu.	5.28.0.97	NOERROR	yes		a.hu		36
+hu	b.hu.	193.41.82.18	NOERROR	yes		MZ/Y 2022	MZ/Y 2022	38
+hu	c.hu.	195.111.1.92	NOERROR	yes		c.hu		54
+hu	d.hu.	5.28.0.99	NOERROR	yes		MZ/Y 2022	MZ/Y 2022	44
+hu	e.hu.	194.0.25.11	NOERROR	yes	tld-all-sto1@53011	tld-all-amx1@53011	tld-all-amx1@53011	46
+hu	f.hu.	194.0.9.1	NOERROR	yes	dns.ams.nic.fr	dns.ams.nic.fr	dns.ams.nic.fr	13
+hu	p.hu.	204.61.216.146	NOERROR	yes	1.ams.pch	3.ams.pch	3.ams.pch	31
+sk	e.tld.sk.	194.169.218.16	NOERROR	yes	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	129
+sk	f.tld.sk.	185.24.64.16	NOERROR	yes	PDUS-VJ5JVS-CTI2KM	MBBQ-HL0WP7-P2BCQ3	MBBQ-HL0WP7-P2BCQ3	26
+sk	g.tld.sk.	212.18.248.16	NOERROR	yes	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	MKNE-YS4NAG-GNCI6O	125
+sk	h.tld.sk.	212.18.249.16	NOERROR	yes	MBBQ-HL0WP7-P2BCQ3	MBBQ-HL0WP7-P2BCQ3	PDUS-VJ5JVS-CTI2KM	21
+si	b.dns.si.	153.5.81.140	NOERROR	yes		srebrnjak.register.si	srebrnjak.register.si	43
+si	f.dns.si.	194.146.106.62	NOERROR	yes	s2.amx	s2.amx	s2.amx	24
+si	h.dns.si.	204.61.216.54	NOERROR	yes	6.ams.pch	2.ams.pch	3.ams.pch	20
+si	i.dns.si.	194.0.25.22	NOERROR	yes	tld-all-amx1@53022	tld-all-amx1@53022	tld-all-amx1@53022	16
+si	k.dns.si.	185.159.197.11	NOERROR	yes	LHR3	LHR4	LHR4	23
+si	l.dns.si.	185.159.198.11	NOERROR	yes	FRA2	FRA1	FRA2	23
+ee	b.tld.ee.	194.146.106.110	NOERROR	yes	s2.amx	s2.amx	s2.amx	26
+ee	e.tld.ee.	204.61.216.36	NOERROR	yes	3.ams.pch	3.ams.pch	6.ams.pch	23
+ee	ee.cert.ee.	46.226.142.147	NOERROR	yes	ee_cert_ee			47
+ee	ee.eenet.ee.	193.40.132.5	NOERROR	yes		eenet-n4		46
+ee	ns.tld.ee.	195.43.87.10	NOERROR	yes	dns-tld-n2.infra.tld.ee	dns-tld-n2	dns-tld-n2	58
+lv	a.nic.lv.	194.0.48.1	NOERROR	yes	a-riga		a-riga	55
+lv	b.nic.lv.	92.240.70.1	NOERROR	yes	b-nic		b-nic	51
+lv	c.nic.lv.	185.159.199.140	NOERROR	yes	LHR3	FRA2	FRA2	25
+lv	d.nic.lv.	194.0.8.1	NOERROR	yes	ac-sanp		ac-valm	244
+lv	n.nic.lv.	194.146.106.150	NOERROR	yes	s2.amx	s2.amx	s2.amx	21
+lv	nu.nic.lv.	77.72.229.249	NOERROR	yes	u1.sub	u1.stu	u1.sub	45
+lv	sunic.sunet.se.	192.36.125.2	NOERROR	yes				43
+lt	a.tld.lt.	185.150.40.131	NOERROR	yes	AD	AD	AD	65
+lt	b.tld.lt.	194.0.20.1	NOERROR	yes	BB	BB	BB	54
+lt	d.tld.lt.	194.0.3.1	NOERROR	yes		DT	DS	48
+lt	e.tld.lt.	194.0.18.1	NOERROR	yes		DLJ	DLJ	73
+lt	f.tld.lt.	194.0.19.1	NOERROR	yes		PHX	PHX	32
+lt	r.tld.lt.	194.0.25.46	NOERROR	yes	tld-all-amx1@53046	tld-all-amx1@53046	tld-all-amx1@53046	17
+eu	be.dns.eu.	149.38.1.26	NOERROR	yes				28
+eu	si.dns.eu.	193.2.221.62	NOERROR	yes				44
+eu	w.dns.eu.	194.0.25.28	NOERROR	yes	tld-all-amx1@53028	tld-all-amx1@53028	tld-all-amx1@53028	21
+eu	x.dns.eu.	185.151.141.1	NOERROR	yes	ns-1.eu.nl1.bind	ns-1.eu.nl1.bind	ns-2.eu.nl1.bind	20
+eu	y.dns.eu.	194.146.106.90	NOERROR	yes	s2.amx	s2.amx	s2.amx	19
