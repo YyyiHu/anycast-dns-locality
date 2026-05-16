@@ -1,9 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
 .venv/
 .env
-__pycache__/
-*.pyc
 
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+# Generated raw data
+data/raw/**
+
+# Keep folder placeholders
+!data/**/.gitkeep
+
+# Keep curated inputs
+!data/input/
+!data/input/*.csv
+
+# Keep processed thesis evidence
+!data/processed/
+!data/processed/**/*.tsv
