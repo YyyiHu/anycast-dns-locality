@@ -1,19 +1,14 @@
-# Python
 __pycache__/
 *.py[cod]
 .venv/
+
 .env
+.env.*
+!.env.example
 
-# Generated raw data
+.DS_Store
+
+results/atlas/*.json
+
 data/raw/**
-
-# Keep folder placeholders
-!data/**/.gitkeep
-
-# Keep curated inputs
-!data/input/
-!data/input/*.csv
-
-# Keep processed thesis evidence
-!data/processed/
-!data/processed/**/*.tsv
+!data/raw/.gitkeep
