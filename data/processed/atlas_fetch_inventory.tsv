@@ -1,0 +1,21 @@
+measurement_id	target	query_argument	description	atlas_status	fetch_status	result_count	expected_probe_count	missing_count	missing_probe_ids	raw_file	error	fetched_at
+173811458	194.0.43.1	be.	thesis-anycast-locality SOA NSID be. via c.nsset.be 194.0.43.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811458.json		2026-05-23T18:45:57.522423+00:00
+173811459	120.29.253.8	be.	thesis-anycast-locality SOA NSID be. via y.nsset.be 120.29.253.8	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811459.json		2026-05-23T18:45:58.145300+00:00
+173811460	194.0.25.36	be.	thesis-anycast-locality SOA NSID be. via z.nsset.be 194.0.25.36	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811460.json		2026-05-23T18:45:59.930553+00:00
+173811461	194.0.28.53	nl.	thesis-anycast-locality SOA NSID nl. via ns1.dns.nl 194.0.28.53	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811461.json		2026-05-23T18:46:01.033435+00:00
+173811462	194.0.25.24	nl.	thesis-anycast-locality SOA NSID nl. via ns3.dns.nl 194.0.25.24	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811462.json		2026-05-23T18:46:01.727452+00:00
+173811463	185.159.199.200	nl.	thesis-anycast-locality SOA NSID nl. via ns4.dns.nl 185.159.199.200	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811463.json		2026-05-23T18:46:02.334167+00:00
+173811464	194.0.0.53	de.	thesis-anycast-locality SOA NSID de. via a.nic.de 194.0.0.53	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811464.json		2026-05-23T18:46:03.081319+00:00
+173811465	77.67.63.105	de.	thesis-anycast-locality SOA NSID de. via l.de.net 77.67.63.105	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811465.json		2026-05-23T18:46:03.853001+00:00
+173811466	194.146.107.6	de.	thesis-anycast-locality SOA NSID de. via n.de.net 194.146.107.6	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811466.json		2026-05-23T18:46:04.418604+00:00
+173811467	194.246.96.1	de.	thesis-anycast-locality SOA NSID de. via z.nic.de 194.246.96.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811467.json		2026-05-23T18:46:05.045127+00:00
+173811468	194.0.9.1	fr.	thesis-anycast-locality SOA NSID fr. via d.nic.fr 194.0.9.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811468.json		2026-05-23T18:46:05.619733+00:00
+173811469	194.146.106.46	fr.	thesis-anycast-locality SOA NSID fr. via f.ext.nic.fr 194.146.106.46	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811469.json		2026-05-23T18:46:06.232378+00:00
+173811470	194.0.36.1	fr.	thesis-anycast-locality SOA NSID fr. via g.ext.nic.fr 194.0.36.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811470.json		2026-05-23T18:46:09.993511+00:00
+173811471	194.0.12.1	cz.	thesis-anycast-locality SOA NSID cz. via a.ns.nic.cz 194.0.12.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811471.json		2026-05-23T18:46:10.610841+00:00
+173811472	194.0.13.1	cz.	thesis-anycast-locality SOA NSID cz. via b.ns.nic.cz 194.0.13.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811472.json		2026-05-23T18:46:11.165321+00:00
+173811473	194.0.14.1	cz.	thesis-anycast-locality SOA NSID cz. via c.ns.nic.cz 194.0.14.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811473.json		2026-05-23T18:46:11.761723+00:00
+173811474	193.29.206.1	cz.	thesis-anycast-locality SOA NSID cz. via d.ns.nic.cz 193.29.206.1	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811474.json		2026-05-23T18:46:12.373196+00:00
+173811475	194.146.106.50	at.	thesis-anycast-locality SOA NSID at. via j.ns.at 194.146.106.50	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811475.json		2026-05-23T18:46:12.986784+00:00
+173811476	194.0.25.10	at.	thesis-anycast-locality SOA NSID at. via r.ns.at 194.0.25.10	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811476.json		2026-05-23T18:46:13.605487+00:00
+173811477	192.92.125.2	at.	thesis-anycast-locality SOA NSID at. via ns2.univie.ac.at 192.92.125.2	Stopped	ok	80	81	1	1002473	data/raw/atlas/results/173811477.json		2026-05-23T18:46:14.285680+00:00
