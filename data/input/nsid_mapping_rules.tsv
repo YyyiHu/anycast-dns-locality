@@ -1,0 +1,140 @@
+priority	match_type	pattern	city	country_code	region_class	confidence	note
+10	contains	zaventem	Zaventem	BE	EU	high	Explicit city name in NSID
+10	contains	london	London	GB	UK	high	Explicit city name in NSID
+10	contains	prague	Prague	CZ	EU	high	Explicit city name in NSID
+20	regex	^dns[0-9]+\.defra[0-9]+$	Frankfurt	DE	EU	high	Compound country and city code: de plus fra
+20	regex	^dns[0-9]+\.frpar[0-9]+$	Paris	FR	EU	high	Compound country and city code: fr plus par
+20	regex	^dns[0-9]+\.gblon[0-9]+$	London	GB	UK	high	Compound country and city code: gb plus lon
+20	regex	^dns[0-9]+\.nlams[0-9]+$	Amsterdam	NL	EU	high	Compound country and city code: nl plus ams
+20	regex	^dns[0-9]+\.sesto[0-9]+$	Stockholm	SE	EU	high	Compound country and city code: se plus sto
+20	regex	^dns[0-9]+\.usnyc[0-9]+$	New York	US	Other non EU	high	Compound country and city code: us plus nyc
+20	regex	^dns[0-9]+\.indel[0-9]+$	Delhi	IN	Other non EU	high	Compound country and city code: in plus del
+30	regex	^tld-all-ams[0-9](?:@.*)?$	Amsterdam	NL	EU	high	City code in tld-all NSID
+30	regex	^tld-all-amx[0-9](?:@.*)?$	Amsterdam	NL	EU	medium	AMX interpreted as Amsterdam exchange style label
+30	regex	^tld-all-ber[0-9](?:@.*)?$	Berlin	DE	EU	high	City code in tld-all NSID
+30	regex	^tld-all-blr[0-9](?:@.*)?$	Bengaluru	IN	Other non EU	high	City code in tld-all NSID
+30	regex	^tld-all-buc[0-9](?:@.*)?$	Bucharest	RO	EU	high	City code in tld-all NSID
+30	regex	^tld-all-bud[0-9](?:@.*)?$	Budapest	HU	EU	high	City code in tld-all NSID
+30	regex	^tld-all-fam[0-9](?:@.*)?$	Frankfurt	DE	EU	medium	Frankfurt am Main style label
+30	regex	^tld-all-gnf[0-9](?:@.*)?$	Geneva	CH	CH	medium	Geneva style label
+30	regex	^tld-all-lis[0-9](?:@.*)?$	Lisbon	PT	EU	high	City code in tld-all NSID
+30	regex	^tld-all-lju[0-9](?:@.*)?$	Ljubljana	SI	EU	high	City code in tld-all NSID
+30	regex	^tld-all-lon[0-9](?:@.*)?$	London	GB	UK	high	City code in tld-all NSID
+30	regex	^tld-all-lux[0-9](?:@.*)?$	Luxembourg	LU	EU	high	City code in tld-all NSID
+30	regex	^tld-all-mad[0-9](?:@.*)?$	Madrid	ES	EU	high	City code in tld-all NSID
+30	regex	^tld-all-mel[0-9](?:@.*)?$	Melbourne	AU	Other non EU	high	City code in tld-all NSID
+30	regex	^tld-all-mil[0-9](?:@.*)?$	Milan	IT	EU	high	City code in tld-all NSID
+30	regex	^tld-all-par[0-9](?:@.*)?$	Paris	FR	EU	high	City code in tld-all NSID
+30	regex	^tld-all-rig[0-9](?:@.*)?$	Riga	LV	EU	high	City code in tld-all NSID
+30	regex	^tld-all-sto[0-9](?:@.*)?$	Stockholm	SE	EU	high	City code in tld-all NSID
+30	regex	^tld-all-tam[0-9](?:@.*)?$	Tampere	FI	EU	medium	Tampere style label
+30	regex	^tld-all-vnn[0-9](?:@.*)?$	Vienna	AT	EU	medium	Vienna style label
+30	regex	^tld-all-waw[0-9](?:@.*)?$	Warsaw	PL	EU	high	City code in tld-all NSID
+40	regex	^eqx-am-	Amsterdam	NL	EU	high	Equinix style city code
+40	regex	^eqx-fr-	Frankfurt	DE	EU	high	Equinix style city code
+40	regex	^eqx-ny-	New York	US	Other non EU	high	Equinix style city code
+40	regex	^eqx-pa-	Paris	FR	EU	high	Equinix style city code
+40	regex	^eqx-sk-	Stockholm	SE	EU	medium	Equinix style regional code
+50	regex	^CDG[0-9]+$	Paris	FR	EU	high	IATA style airport code
+50	regex	^FRA[0-9]+$	Frankfurt	DE	EU	high	IATA style airport code
+50	regex	^LHR[0-9]+$	London	GB	UK	high	IATA style airport code
+50	regex	^MAD[0-9]+$	Madrid	ES	EU	high	IATA style airport code
+50	regex	^PRG[0-9]+$	Prague	CZ	EU	high	IATA style airport code
+50	regex	^STO[0-9]+$	Stockholm	SE	EU	high	City code style label
+50	regex	^TYO[0-9]+$	Tokyo	JP	Other non EU	high	IATA metropolitan code style label
+60	regex	^ns-[0-9]+\.de\.at[0-9]+\.		AT	EU	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.de[0-9]+\.		DE	EU	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.fr[0-9]+\.		FR	EU	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.nl[0-9]+\.		NL	EU	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.se[0-9]+\.		SE	EU	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.uk[0-9]+\.		GB	UK	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.us[0-9]+\.		US	Other non EU	high	DENIC country code in NSID
+60	regex	^ns-[0-9]+\.de\.cn[0-9]+\.		CN	Other non EU	high	DENIC country code in NSID
+60	regex	^ns\.de\.anx-uk[0-9]+\.		GB	UK	high	DENIC country code in NSID
+60	regex	^ns\.de\.cl[0-9]+\.		CL	Other non EU	high	DENIC country code in NSID
+60	regex	^ns\.de\.fr[0-9]+\.		FR	EU	high	DENIC country code in NSID
+60	regex	^ns\.de\.ae[0-9]+\.		AE	Other non EU	high	DENIC country code in NSID
+60	regex	^ns\.de\.in[0-9]+\.		IN	Other non EU	high	DENIC country code in NSID
+60	regex	^ns\.de\.pl[0-9]+\.		PL	EU	high	DENIC country code in NSID
+70	regex	^dns\.ams\.nic\.fr$	Amsterdam	NL	EU	high	Explicit AFNIC city code
+70	regex	^dns\.fra\.nic\.fr$	Frankfurt	DE	EU	high	Explicit AFNIC city code
+70	regex	^dns\.lil\.nic\.fr$	Lille	FR	EU	high	Explicit AFNIC city code
+70	regex	^dns\.lon\.nic\.fr$	London	GB	UK	high	Explicit AFNIC city code
+70	regex	^dns\.mrs\.nic\.fr$	Marseille	FR	EU	high	Explicit AFNIC city code
+70	regex	^dns\.nyc\.nic\.fr$	New York	US	Other non EU	high	Explicit AFNIC city code
+70	regex	^dns\.prg\.nic\.fr$	Prague	CZ	EU	high	Explicit AFNIC city code
+70	regex	^dns\.th2\.nic\.fr$	Paris	FR	EU	medium	Telehouse Paris style facility code
+80	regex	^[0-9]+\.ams\.pch$	Amsterdam	NL	EU	high	PCH city code
+80	regex	^[0-9]+\.arn\.pch$	Stockholm	SE	EU	high	PCH city code
+80	regex	^[0-9]+\.ath\.pch$	Athens	GR	EU	high	PCH city code
+80	regex	^[0-9]+\.beg\.pch$	Belgrade	RS	Other non EU	high	PCH city code
+80	regex	^[0-9]+\.bom2\.pch$	Mumbai	IN	Other non EU	high	PCH city code
+80	regex	^[0-9]+\.bru\.pch$	Brussels	BE	EU	high	PCH city code
+80	regex	^[0-9]+\.bts\.pch$	Bratislava	SK	EU	high	PCH city code
+80	regex	^[0-9]+\.bud\.pch$	Budapest	HU	EU	high	PCH city code
+80	regex	^[0-9]+\.cdg\.pch$	Paris	FR	EU	high	PCH city code
+80	regex	^[0-9]+\.dub\.pch$	Dublin	IE	EU	high	PCH city code
+80	regex	^[0-9]+\.fra\.pch$	Frankfurt	DE	EU	high	PCH city code
+80	regex	^[0-9]+\.ham\.pch$	Hamburg	DE	EU	high	PCH city code
+80	regex	^[0-9]+\.lhr\.pch$	London	GB	UK	high	PCH city code
+80	regex	^[0-9]+\.lis\.pch$	Lisbon	PT	EU	high	PCH city code
+80	regex	^[0-9]+\.lju\.pch$	Ljubljana	SI	EU	high	PCH city code
+80	regex	^[0-9]+\.mad\.pch$	Madrid	ES	EU	high	PCH city code
+80	regex	^[0-9]+\.prg\.pch$	Prague	CZ	EU	high	PCH city code
+80	regex	^[0-9]+\.rix\.pch$	Riga	LV	EU	high	PCH city code
+80	regex	^[0-9]+\.skg\.pch$	Thessaloniki	GR	EU	high	PCH city code
+80	regex	^[0-9]+\.sof\.pch$	Sofia	BG	EU	high	PCH city code
+80	regex	^[0-9]+\.tmp\.pch$	Tampere	FI	EU	high	PCH city code
+80	regex	^[0-9]+\.trn\.pch$	Turin	IT	EU	high	PCH city code
+80	regex	^[0-9]+\.vie\.pch$	Vienna	AT	EU	high	PCH city code
+80	regex	^[0-9]+\.waw2?\.pch$	Warsaw	PL	EU	high	PCH city code
+80	regex	^[0-9]+\.zrh\.pch$	Zurich	CH	CH	high	PCH city code
+90	regex	^s[23]\.amx$	Amsterdam	NL	EU	medium	Shared operator short location label
+90	regex	^s[23]\.bah$	Manama	BH	Other non EU	high	City code in shared operator label
+90	regex	^s[23]\.bnx$	Brussels	BE	EU	medium	BNIX or Brussels style label
+90	regex	^s[23]\.bts$	Bratislava	SK	EU	high	City code in shared operator label
+90	regex	^s[23]\.cdg$	Paris	FR	EU	high	City code in shared operator label
+90	regex	^s[23]\.del$	Delhi	IN	Other non EU	high	City code in shared operator label
+90	regex	^s[23]\.dex$	Frankfurt	DE	EU	medium	DE CIX style label
+90	regex	^s[23]\.fix$	Helsinki	FI	EU	medium	Finnish exchange style label
+90	regex	^s[23]\.hel$	Helsinki	FI	EU	high	City code in shared operator label
+90	regex	^s[23]\.jak$	Jakarta	ID	Other non EU	high	City code in shared operator label
+90	regex	^s[23]\.lju$	Ljubljana	SI	EU	high	City code in shared operator label
+90	regex	^s[23]\.lnx$	London	GB	UK	medium	LINX shorthand
+90	regex	^s[23]\.lon$	London	GB	UK	high	City code in shared operator label
+90	regex	^s[23]\.lux$	Luxembourg	LU	EU	high	City code in shared operator label
+90	regex	^s[23]\.mex$	Mexico City	MX	Other non EU	high	City code in shared operator label
+90	regex	^s[23]\.mix$	Milan	IT	EU	medium	Milan exchange style label
+90	regex	^s[23]\.rix$	Riga	LV	EU	high	City code in shared operator label
+90	regex	^s[23]\.rox$	Bucharest	RO	EU	medium	Romanian exchange style label
+90	regex	^s[23]\.sof$	Sofia	BG	EU	high	City code in shared operator label
+90	regex	^s[23]\.stm$	Stockholm	SE	EU	medium	Stockholm style label
+90	regex	^s[23]\.sto$	Stockholm	SE	EU	high	City code in shared operator label
+90	regex	^s[23]\.tll$	Tallinn	EE	EU	high	City code in shared operator label
+90	regex	^s[23]\.tok$	Tokyo	JP	Other non EU	high	City code in shared operator label
+90	regex	^s[23]\.vno$	Vilnius	LT	EU	high	City code in shared operator label
+90	regex	^s[23]\.wie$	Vienna	AT	EU	medium	Wien style label
+90	regex	^s[23]\.yvr$	Vancouver	CA	Other non EU	high	City code in shared operator label
+90	regex	^s[23]\.zrh$	Zurich	CH	CH	high	City code in shared operator label
+100	regex	^dns-decix[0-9]?-.+\.nic\.cz$	Frankfurt	DE	EU	medium	DE CIX infrastructure hint
+100	regex	^dns-linx-.+\.nic\.cz$	London	GB	UK	medium	LINX infrastructure hint
+100	regex	^dns-vix-.+\.nic\.cz$	Vienna	AT	EU	medium	Vienna Internet Exchange infrastructure hint
+100	regex	^dns-nixsk-.+\.nic\.cz$	Bratislava	SK	EU	medium	NIX.SK infrastructure hint
+100	regex	^dns-sgix-.+\.nic\.cz$	Singapore	SG	Other non EU	medium	SGIX infrastructure hint
+100	regex	^dns-sixusa-.+\.nic\.cz$		US	Other non EU	medium	SIX USA infrastructure hint
+100	regex	^dns-jinx-.+\.nic\.cz$	Johannesburg	ZA	Other non EU	medium	JINX infrastructure hint
+100	regex	^dns-ixbr-.+\.nic\.cz$		BR	Other non EU	medium	IX.br infrastructure hint
+100	regex	^dns-jpnap-.+\.nic\.cz$	Tokyo	JP	Other non EU	medium	JPNAP infrastructure hint
+100	regex	^dns-chile-.+\.nic\.cz$		CL	Other non EU	medium	Chile infrastructure hint
+100	regex	^dns-netnod-.+\.nic\.cz$	Stockholm	SE	EU	medium	Netnod infrastructure hint
+100	regex	^dns-cosmonova-.+\.nic\.cz$	Prague	CZ	EU	medium	Czech provider hint
+100	regex	^dns-cecolo-.+\.nic\.cz$	Vienna	AT	EU	medium	Austrian provider hint
+100	regex	^dns-cra-.+\.nic\.cz$	Prague	CZ	EU	low	Czech looking provider hint, excluded from main denominator
+100	regex	^dns-mix-.+\.nic\.cz$	Milan	IT	EU	medium	Milan exchange infrastructure hint
+110	regex	^id-02-FRA-[0-9]+-at$	Frankfurt	DE	EU	high	Univie style explicit city code
+110	regex	^id-02-LON-[0-9]+-at$	London	GB	UK	high	Univie style explicit city code
+110	regex	^id-02-PRG-[0-9]+-at$	Prague	CZ	EU	high	Univie style explicit city code
+110	regex	^id-02-STO-[0-9]+-at$	Stockholm	SE	EU	high	Univie style explicit city code
+110	regex	^id-02-STR-[0-9]+-at$	Stuttgart	DE	EU	high	Univie style explicit city code
+110	regex	^id-02-SYD-[0-9]+-at$	Sydney	AU	Other non EU	high	Univie style explicit city code
+110	regex	^id-02-IX-[0-9]+-at$		AT	EU	medium	IX likely local exchange style label, region only
