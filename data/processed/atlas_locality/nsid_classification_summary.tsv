@@ -1,0 +1,353 @@
+measurement_id	cctld	nameserver	target	query_argument	nsid_raw	count	classification_status	city	country_code	region_class	classification_confidence	classification_method	matched_rule_priority	matched_rule_pattern	classification_note
+173811458	.be	c.nsset.be	194.0.43.1	be.	london1.ns.prodng.dc3.be	43	classified	London	GB	UK	high	contains	10	london	Explicit city name in NSID
+173811458	.be	c.nsset.be	194.0.43.1	be.	prague1.ns.prodng.dc3.be	20	classified	Prague	CZ	EU	high	contains	10	prague	Explicit city name in NSID
+173811458	.be	c.nsset.be	194.0.43.1	be.	zaventem1.ns.prodng.dc3.be	15	classified	Zaventem	BE	EU	high	contains	10	zaventem	Explicit city name in NSID
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns1.defra1	1	classified	Frankfurt	DE	EU	high	regex	20	^dns[0-9]+\.defra[0-9]+$	Compound country and city code: de plus fra
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns1.frpar1	5	classified	Paris	FR	EU	high	regex	20	^dns[0-9]+\.frpar[0-9]+$	Compound country and city code: fr plus par
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns1.gblon1	1	classified	London	GB	UK	high	regex	20	^dns[0-9]+\.gblon[0-9]+$	Compound country and city code: gb plus lon
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns1.nlams1	5	classified	Amsterdam	NL	EU	high	regex	20	^dns[0-9]+\.nlams[0-9]+$	Compound country and city code: nl plus ams
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns1.sesto1	6	classified	Stockholm	SE	EU	high	regex	20	^dns[0-9]+\.sesto[0-9]+$	Compound country and city code: se plus sto
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns1.usnyc1	1	classified	New York	US	Other non EU	high	regex	20	^dns[0-9]+\.usnyc[0-9]+$	Compound country and city code: us plus nyc
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns2.defra1	2	classified	Frankfurt	DE	EU	high	regex	20	^dns[0-9]+\.defra[0-9]+$	Compound country and city code: de plus fra
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns2.frpar1	10	classified	Paris	FR	EU	high	regex	20	^dns[0-9]+\.frpar[0-9]+$	Compound country and city code: fr plus par
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns2.nlams1	5	classified	Amsterdam	NL	EU	high	regex	20	^dns[0-9]+\.nlams[0-9]+$	Compound country and city code: nl plus ams
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns2.sesto1	1	classified	Stockholm	SE	EU	high	regex	20	^dns[0-9]+\.sesto[0-9]+$	Compound country and city code: se plus sto
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns3.frpar1	6	classified	Paris	FR	EU	high	regex	20	^dns[0-9]+\.frpar[0-9]+$	Compound country and city code: fr plus par
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns3.gblon1	2	classified	London	GB	UK	high	regex	20	^dns[0-9]+\.gblon[0-9]+$	Compound country and city code: gb plus lon
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns3.indel1	1	classified	Delhi	IN	Other non EU	high	regex	20	^dns[0-9]+\.indel[0-9]+$	Compound country and city code: in plus del
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns3.nlams1	6	classified	Amsterdam	NL	EU	high	regex	20	^dns[0-9]+\.nlams[0-9]+$	Compound country and city code: nl plus ams
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns3.sesto1	2	classified	Stockholm	SE	EU	high	regex	20	^dns[0-9]+\.sesto[0-9]+$	Compound country and city code: se plus sto
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns4.defra1	2	classified	Frankfurt	DE	EU	high	regex	20	^dns[0-9]+\.defra[0-9]+$	Compound country and city code: de plus fra
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns4.frpar1	8	classified	Paris	FR	EU	high	regex	20	^dns[0-9]+\.frpar[0-9]+$	Compound country and city code: fr plus par
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns4.gblon1	2	classified	London	GB	UK	high	regex	20	^dns[0-9]+\.gblon[0-9]+$	Compound country and city code: gb plus lon
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns4.nlams1	10	classified	Amsterdam	NL	EU	high	regex	20	^dns[0-9]+\.nlams[0-9]+$	Compound country and city code: nl plus ams
+173811459	.be	y.nsset.be	120.29.253.8	be.	dns4.sesto1	2	classified	Stockholm	SE	EU	high	regex	20	^dns[0-9]+\.sesto[0-9]+$	Compound country and city code: se plus sto
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-ams1	2	classified	Amsterdam	NL	EU	high	regex	30	^tld-all-ams[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-amx1@53036	4	classified	Amsterdam	NL	EU	medium	regex	30	^tld-all-amx[0-9](?:@.*)?$	AMX interpreted as Amsterdam exchange style label
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-ber1@53036	1	classified	Berlin	DE	EU	high	regex	30	^tld-all-ber[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-blr1@53036	1	classified	Bengaluru	IN	Other non EU	high	regex	30	^tld-all-blr[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-buc1@53036	6	classified	Bucharest	RO	EU	high	regex	30	^tld-all-buc[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-bud1@53036	3	classified	Budapest	HU	EU	high	regex	30	^tld-all-bud[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-fam1@53036	10	classified	Frankfurt	DE	EU	medium	regex	30	^tld-all-fam[0-9](?:@.*)?$	Frankfurt am Main style label
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-gnf1@53036	1	classified	Geneva	CH	CH	medium	regex	30	^tld-all-gnf[0-9](?:@.*)?$	Geneva style label
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-lis1@53036	1	classified	Lisbon	PT	EU	high	regex	30	^tld-all-lis[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-lju1@53036	3	classified	Ljubljana	SI	EU	high	regex	30	^tld-all-lju[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-lon1@53036	1	classified	London	GB	UK	high	regex	30	^tld-all-lon[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-lux1@53036	1	classified	Luxembourg	LU	EU	high	regex	30	^tld-all-lux[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-mad1@53036	4	classified	Madrid	ES	EU	high	regex	30	^tld-all-mad[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-mel1@53036	1	classified	Melbourne	AU	Other non EU	high	regex	30	^tld-all-mel[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-mil1@53036	5	classified	Milan	IT	EU	high	regex	30	^tld-all-mil[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-par1@53036	3	classified	Paris	FR	EU	high	regex	30	^tld-all-par[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-prs1@53036	3	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-rig1	7	classified	Riga	LV	EU	high	regex	30	^tld-all-rig[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-sto1@53036	6	classified	Stockholm	SE	EU	high	regex	30	^tld-all-sto[0-9](?:@.*)?$	City code in tld-all NSID
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-tam1@53036	2	classified	Tampere	FI	EU	medium	regex	30	^tld-all-tam[0-9](?:@.*)?$	Tampere style label
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-vnn1@53036	10	classified	Vienna	AT	EU	medium	regex	30	^tld-all-vnn[0-9](?:@.*)?$	Vienna style label
+173811460	.be	z.nsset.be	194.0.25.36	be.	tld-all-waw1@53036	3	classified	Warsaw	PL	EU	high	regex	30	^tld-all-waw[0-9](?:@.*)?$	City code in tld-all NSID
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-am-ns01-128214	6	classified	Amsterdam	NL	EU	high	regex	40	^eqx-am-	Equinix style city code
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-am-ns02-129888	5	classified	Amsterdam	NL	EU	high	regex	40	^eqx-am-	Equinix style city code
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-fr-ns01-128214	24	classified	Frankfurt	DE	EU	high	regex	40	^eqx-fr-	Equinix style city code
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-fr-ns02-129888	23	classified	Frankfurt	DE	EU	high	regex	40	^eqx-fr-	Equinix style city code
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-ny-ns03-129888	1	classified	New York	US	Other non EU	high	regex	40	^eqx-ny-	Equinix style city code
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-pa-ns01-129888	10	classified	Paris	FR	EU	high	regex	40	^eqx-pa-	Equinix style city code
+173811461	.nl	ns1.dns.nl	194.0.28.53	nl.	eqx-sk-ns11-128214	9	classified	Stockholm	SE	EU	medium	regex	40	^eqx-sk-	Equinix style regional code
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-ams1	2	classified	Amsterdam	NL	EU	high	regex	30	^tld-all-ams[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-amx1@53024	4	classified	Amsterdam	NL	EU	medium	regex	30	^tld-all-amx[0-9](?:@.*)?$	AMX interpreted as Amsterdam exchange style label
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-ber1@53024	1	classified	Berlin	DE	EU	high	regex	30	^tld-all-ber[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-blr1@53024	1	classified	Bengaluru	IN	Other non EU	high	regex	30	^tld-all-blr[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-buc1@53024	6	classified	Bucharest	RO	EU	high	regex	30	^tld-all-buc[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-bud1@53024	3	classified	Budapest	HU	EU	high	regex	30	^tld-all-bud[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-fam1@53024	10	classified	Frankfurt	DE	EU	medium	regex	30	^tld-all-fam[0-9](?:@.*)?$	Frankfurt am Main style label
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-gnf1@53024	1	classified	Geneva	CH	CH	medium	regex	30	^tld-all-gnf[0-9](?:@.*)?$	Geneva style label
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-lis1@53024	1	classified	Lisbon	PT	EU	high	regex	30	^tld-all-lis[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-lju1@53024	3	classified	Ljubljana	SI	EU	high	regex	30	^tld-all-lju[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-lon1@53024	1	classified	London	GB	UK	high	regex	30	^tld-all-lon[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-lux1@53024	1	classified	Luxembourg	LU	EU	high	regex	30	^tld-all-lux[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-mad1@53024	4	classified	Madrid	ES	EU	high	regex	30	^tld-all-mad[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-mel1@53024	1	classified	Melbourne	AU	Other non EU	high	regex	30	^tld-all-mel[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-mil1@53024	5	classified	Milan	IT	EU	high	regex	30	^tld-all-mil[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-par1@53024	4	classified	Paris	FR	EU	high	regex	30	^tld-all-par[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-prs1@53024	2	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-rig1	7	classified	Riga	LV	EU	high	regex	30	^tld-all-rig[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-sto1@53024	6	classified	Stockholm	SE	EU	high	regex	30	^tld-all-sto[0-9](?:@.*)?$	City code in tld-all NSID
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-tam1@53024	2	classified	Tampere	FI	EU	medium	regex	30	^tld-all-tam[0-9](?:@.*)?$	Tampere style label
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-vnn1@53024	10	classified	Vienna	AT	EU	medium	regex	30	^tld-all-vnn[0-9](?:@.*)?$	Vienna style label
+173811462	.nl	ns3.dns.nl	194.0.25.24	nl.	tld-all-waw1@53024	3	classified	Warsaw	PL	EU	high	regex	30	^tld-all-waw[0-9](?:@.*)?$	City code in tld-all NSID
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	CDG1	10	classified	Paris	FR	EU	high	regex	50	^CDG[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	CDG2	13	classified	Paris	FR	EU	high	regex	50	^CDG[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	FRA1	13	classified	Frankfurt	DE	EU	high	regex	50	^FRA[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	FRA2	11	classified	Frankfurt	DE	EU	high	regex	50	^FRA[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	LHR3	9	classified	London	GB	UK	high	regex	50	^LHR[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	LHR4	12	classified	London	GB	UK	high	regex	50	^LHR[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	MAD1	2	classified	Madrid	ES	EU	high	regex	50	^MAD[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	PRG1	2	classified	Prague	CZ	EU	high	regex	50	^PRG[0-9]+$	IATA style airport code
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	STO1	4	classified	Stockholm	SE	EU	high	regex	50	^STO[0-9]+$	City code style label
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	STO2	1	classified	Stockholm	SE	EU	high	regex	50	^STO[0-9]+$	City code style label
+173811463	.nl	ns4.dns.nl	185.159.199.200	nl.	TYO2	1	classified	Tokyo	JP	Other non EU	high	regex	50	^TYO[0-9]+$	IATA metropolitan code style label
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-1.de.at1.bind	18	classified		AT	EU	high	regex	60	^ns-[0-9]+\.de\.at[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-1.de.de8.knot	8	classified		DE	EU	high	regex	60	^ns-[0-9]+\.de\.de[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-1.de.nl1.knot	14	classified		NL	EU	high	regex	60	^ns-[0-9]+\.de\.nl[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-1.de.se1.bind	4	classified		SE	EU	high	regex	60	^ns-[0-9]+\.de\.se[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-2.de.de8.knot	5	classified		DE	EU	high	regex	60	^ns-[0-9]+\.de\.de[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-2.de.nl1.knot	11	classified		NL	EU	high	regex	60	^ns-[0-9]+\.de\.nl[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-2.de.se1.bind	7	classified		SE	EU	high	regex	60	^ns-[0-9]+\.de\.se[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns-2.de.us4.bind	1	classified		US	Other non EU	high	regex	60	^ns-[0-9]+\.de\.us[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns.de.anx-uk2.nsd	1	classified		GB	UK	high	regex	60	^ns\.de\.anx-uk[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns.de.cl1.bind	1	classified		CL	Other non EU	high	regex	60	^ns\.de\.cl[0-9]+\.	DENIC country code in NSID
+173811464	.de	a.nic.de	194.0.0.53	de.	ns.de.fr3.bind	7	classified		FR	EU	high	regex	60	^ns\.de\.fr[0-9]+\.	DENIC country code in NSID
+173811465	.de	l.de.net	77.67.63.105	de.	ns-1.de.fr1.knot	28	classified		FR	EU	high	regex	60	^ns-[0-9]+\.de\.fr[0-9]+\.	DENIC country code in NSID
+173811465	.de	l.de.net	77.67.63.105	de.	ns-1.de.uk1.knot	9	classified		GB	UK	high	regex	60	^ns-[0-9]+\.de\.uk[0-9]+\.	DENIC country code in NSID
+173811465	.de	l.de.net	77.67.63.105	de.	ns-2.de.fr1.knot	26	classified		FR	EU	high	regex	60	^ns-[0-9]+\.de\.fr[0-9]+\.	DENIC country code in NSID
+173811465	.de	l.de.net	77.67.63.105	de.	ns-2.de.uk1.knot	15	classified		GB	UK	high	regex	60	^ns-[0-9]+\.de\.uk[0-9]+\.	DENIC country code in NSID
+173811466	.de	n.de.net	194.146.107.6	de.	s3.amx	4	classified	Amsterdam	NL	EU	medium	regex	90	^s[23]\.amx$	Shared operator short location label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.bah	1	classified	Manama	BH	Other non EU	high	regex	90	^s[23]\.bah$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.bnx	6	classified	Brussels	BE	EU	medium	regex	90	^s[23]\.bnx$	BNIX or Brussels style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.bts	2	classified	Bratislava	SK	EU	high	regex	90	^s[23]\.bts$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.cdg	1	classified	Paris	FR	EU	high	regex	90	^s[23]\.cdg$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.cmx	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811466	.de	n.de.net	194.146.107.6	de.	s3.del	1	classified	Delhi	IN	Other non EU	high	regex	90	^s[23]\.del$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.dex	8	classified	Frankfurt	DE	EU	medium	regex	90	^s[23]\.dex$	DE CIX style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.fix	1	classified	Helsinki	FI	EU	medium	regex	90	^s[23]\.fix$	Finnish exchange style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.hel	1	classified	Helsinki	FI	EU	high	regex	90	^s[23]\.hel$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.jak	2	classified	Jakarta	ID	Other non EU	high	regex	90	^s[23]\.jak$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.lju	3	classified	Ljubljana	SI	EU	high	regex	90	^s[23]\.lju$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.lnx	1	classified	London	GB	UK	medium	regex	90	^s[23]\.lnx$	LINX shorthand
+173811466	.de	n.de.net	194.146.107.6	de.	s3.lon	1	classified	London	GB	UK	high	regex	90	^s[23]\.lon$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.lux	1	classified	Luxembourg	LU	EU	high	regex	90	^s[23]\.lux$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.mex	1	classified	Mexico City	MX	Other non EU	high	regex	90	^s[23]\.mex$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.mix	4	classified	Milan	IT	EU	medium	regex	90	^s[23]\.mix$	Milan exchange style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.rix	1	classified	Riga	LV	EU	high	regex	90	^s[23]\.rix$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.rox	5	classified	Bucharest	RO	EU	medium	regex	90	^s[23]\.rox$	Romanian exchange style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.sof	6	classified	Sofia	BG	EU	high	regex	90	^s[23]\.sof$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.stm	1	classified	Stockholm	SE	EU	medium	regex	90	^s[23]\.stm$	Stockholm style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.sto	4	classified	Stockholm	SE	EU	high	regex	90	^s[23]\.sto$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.tll	3	classified	Tallinn	EE	EU	high	regex	90	^s[23]\.tll$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.tok	1	classified	Tokyo	JP	Other non EU	high	regex	90	^s[23]\.tok$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.vno	4	classified	Vilnius	LT	EU	high	regex	90	^s[23]\.vno$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.wie	3	classified	Vienna	AT	EU	medium	regex	90	^s[23]\.wie$	Wien style label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.yvr	7	classified	Vancouver	CA	Other non EU	high	regex	90	^s[23]\.yvr$	City code in shared operator label
+173811466	.de	n.de.net	194.146.107.6	de.	s3.zrh	4	classified	Zurich	CH	CH	high	regex	90	^s[23]\.zrh$	City code in shared operator label
+173811467	.de	z.nic.de	194.246.96.1	de.	ns-1.de.cn1.bind	2	classified		CN	Other non EU	high	regex	60	^ns-[0-9]+\.de\.cn[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns-1.de.de2.knot	31	classified		DE	EU	high	regex	60	^ns-[0-9]+\.de\.de[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns-2.de.cn1.bind	1	classified		CN	Other non EU	high	regex	60	^ns-[0-9]+\.de\.cn[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns-2.de.de2.knot	30	classified		DE	EU	high	regex	60	^ns-[0-9]+\.de\.de[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns.de.ae1.bind	2	classified		AE	Other non EU	high	regex	60	^ns\.de\.ae[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns.de.fr2.bind	6	classified		FR	EU	high	regex	60	^ns\.de\.fr[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns.de.in1.bind	1	classified		IN	Other non EU	high	regex	60	^ns\.de\.in[0-9]+\.	DENIC country code in NSID
+173811467	.de	z.nic.de	194.246.96.1	de.	ns.de.pl1.bind	5	classified		PL	EU	high	regex	60	^ns\.de\.pl[0-9]+\.	DENIC country code in NSID
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.ams.nic.fr	9	classified	Amsterdam	NL	EU	high	regex	70	^dns\.ams\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.fra.nic.fr	15	classified	Frankfurt	DE	EU	high	regex	70	^dns\.fra\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.lil.nic.fr	3	classified	Lille	FR	EU	high	regex	70	^dns\.lil\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.lon.nic.fr	2	classified	London	GB	UK	high	regex	70	^dns\.lon\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.mrs.nic.fr	2	classified	Marseille	FR	EU	high	regex	70	^dns\.mrs\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.nyc.nic.fr	21	classified	New York	US	Other non EU	high	regex	70	^dns\.nyc\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.prg.nic.fr	6	classified	Prague	CZ	EU	high	regex	70	^dns\.prg\.nic\.fr$	Explicit AFNIC city code
+173811468	.fr	d.nic.fr	194.0.9.1	fr.	dns.th2.nic.fr	20	classified	Paris	FR	EU	medium	regex	70	^dns\.th2\.nic\.fr$	Telehouse Paris style facility code
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.amx	4	classified	Amsterdam	NL	EU	medium	regex	90	^s[23]\.amx$	Shared operator short location label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.bah	2	classified	Manama	BH	Other non EU	high	regex	90	^s[23]\.bah$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.bnx	6	classified	Brussels	BE	EU	medium	regex	90	^s[23]\.bnx$	BNIX or Brussels style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.bts	2	classified	Bratislava	SK	EU	high	regex	90	^s[23]\.bts$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.cdg	1	classified	Paris	FR	EU	high	regex	90	^s[23]\.cdg$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.cmx	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.del	1	classified	Delhi	IN	Other non EU	high	regex	90	^s[23]\.del$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.dex	8	classified	Frankfurt	DE	EU	medium	regex	90	^s[23]\.dex$	DE CIX style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.fix	1	classified	Helsinki	FI	EU	medium	regex	90	^s[23]\.fix$	Finnish exchange style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.hel	1	classified	Helsinki	FI	EU	high	regex	90	^s[23]\.hel$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.jak	2	classified	Jakarta	ID	Other non EU	high	regex	90	^s[23]\.jak$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.lju	3	classified	Ljubljana	SI	EU	high	regex	90	^s[23]\.lju$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.lon	2	classified	London	GB	UK	high	regex	90	^s[23]\.lon$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.lux	1	classified	Luxembourg	LU	EU	high	regex	90	^s[23]\.lux$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.mex	1	classified	Mexico City	MX	Other non EU	high	regex	90	^s[23]\.mex$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.mix	4	classified	Milan	IT	EU	medium	regex	90	^s[23]\.mix$	Milan exchange style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.rix	1	classified	Riga	LV	EU	high	regex	90	^s[23]\.rix$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.rox	5	classified	Bucharest	RO	EU	medium	regex	90	^s[23]\.rox$	Romanian exchange style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.sof	6	classified	Sofia	BG	EU	high	regex	90	^s[23]\.sof$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.stm	2	classified	Stockholm	SE	EU	medium	regex	90	^s[23]\.stm$	Stockholm style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.sto	3	classified	Stockholm	SE	EU	high	regex	90	^s[23]\.sto$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.tll	3	classified	Tallinn	EE	EU	high	regex	90	^s[23]\.tll$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.tok	1	classified	Tokyo	JP	Other non EU	high	regex	90	^s[23]\.tok$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.vno	4	classified	Vilnius	LT	EU	high	regex	90	^s[23]\.vno$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.wie	3	classified	Vienna	AT	EU	medium	regex	90	^s[23]\.wie$	Wien style label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.yvr	7	classified	Vancouver	CA	Other non EU	high	regex	90	^s[23]\.yvr$	City code in shared operator label
+173811469	.fr	f.ext.nic.fr	194.146.106.46	fr.	s2.zrh	3	classified	Zurich	CH	CH	high	regex	90	^s[23]\.zrh$	City code in shared operator label
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.ams.pch	3	classified	Amsterdam	NL	EU	high	regex	80	^[0-9]+\.ams\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.ath.pch	1	classified	Athens	GR	EU	high	regex	80	^[0-9]+\.ath\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.bru.pch	1	classified	Brussels	BE	EU	high	regex	80	^[0-9]+\.bru\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.bts.pch	1	classified	Bratislava	SK	EU	high	regex	80	^[0-9]+\.bts\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.bud.pch	2	classified	Budapest	HU	EU	high	regex	80	^[0-9]+\.bud\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.cdg.pch	4	classified	Paris	FR	EU	high	regex	80	^[0-9]+\.cdg\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.fra.pch	2	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.ham.pch	1	classified	Hamburg	DE	EU	high	regex	80	^[0-9]+\.ham\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.lhr.pch	1	classified	London	GB	UK	high	regex	80	^[0-9]+\.lhr\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.lis.pch	1	classified	Lisbon	PT	EU	high	regex	80	^[0-9]+\.lis\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.lju.pch	2	classified	Ljubljana	SI	EU	high	regex	80	^[0-9]+\.lju\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.mad.pch	2	classified	Madrid	ES	EU	high	regex	80	^[0-9]+\.mad\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.rix.pch	3	classified	Riga	LV	EU	high	regex	80	^[0-9]+\.rix\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.skg.pch	2	classified	Thessaloniki	GR	EU	high	regex	80	^[0-9]+\.skg\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.sof.pch	1	classified	Sofia	BG	EU	high	regex	80	^[0-9]+\.sof\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.tmp.pch	1	classified	Tampere	FI	EU	high	regex	80	^[0-9]+\.tmp\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.trn.pch	1	classified	Turin	IT	EU	high	regex	80	^[0-9]+\.trn\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.vie.pch	3	classified	Vienna	AT	EU	high	regex	80	^[0-9]+\.vie\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.waw.pch	2	classified	Warsaw	PL	EU	high	regex	80	^[0-9]+\.waw2?\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	1.waw2.pch	1	classified	Warsaw	PL	EU	high	regex	80	^[0-9]+\.waw2?\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.ams.pch	1	classified	Amsterdam	NL	EU	high	regex	80	^[0-9]+\.ams\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.arn.pch	1	classified	Stockholm	SE	EU	high	regex	80	^[0-9]+\.arn\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.beg.pch	1	classified	Belgrade	RS	Other non EU	high	regex	80	^[0-9]+\.beg\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.bom2.pch	1	classified	Mumbai	IN	Other non EU	high	regex	80	^[0-9]+\.bom2\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.bru.pch	1	classified	Brussels	BE	EU	high	regex	80	^[0-9]+\.bru\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.bts.pch	3	classified	Bratislava	SK	EU	high	regex	80	^[0-9]+\.bts\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.bud.pch	1	classified	Budapest	HU	EU	high	regex	80	^[0-9]+\.bud\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.fra.pch	1	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.lju.pch	1	classified	Ljubljana	SI	EU	high	regex	80	^[0-9]+\.lju\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.mad.pch	1	classified	Madrid	ES	EU	high	regex	80	^[0-9]+\.mad\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.prg.pch	1	classified	Prague	CZ	EU	high	regex	80	^[0-9]+\.prg\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.sof.pch	2	classified	Sofia	BG	EU	high	regex	80	^[0-9]+\.sof\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.tmp.pch	2	classified	Tampere	FI	EU	high	regex	80	^[0-9]+\.tmp\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.waw.pch	2	classified	Warsaw	PL	EU	high	regex	80	^[0-9]+\.waw2?\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	2.zrh.pch	1	classified	Zurich	CH	CH	high	regex	80	^[0-9]+\.zrh\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	3.ams.pch	3	classified	Amsterdam	NL	EU	high	regex	80	^[0-9]+\.ams\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	3.arn.pch	1	classified	Stockholm	SE	EU	high	regex	80	^[0-9]+\.arn\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	3.fra.pch	2	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	4.ams.pch	2	classified	Amsterdam	NL	EU	high	regex	80	^[0-9]+\.ams\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	4.dub.pch	1	classified	Dublin	IE	EU	high	regex	80	^[0-9]+\.dub\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	5.ams.pch	2	classified	Amsterdam	NL	EU	high	regex	80	^[0-9]+\.ams\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	5.arn.pch	1	classified	Stockholm	SE	EU	high	regex	80	^[0-9]+\.arn\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	5.fra.pch	2	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	6.ams.pch	3	classified	Amsterdam	NL	EU	high	regex	80	^[0-9]+\.ams\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	6.fra.pch	1	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	7.arn.pch	2	classified	Stockholm	SE	EU	high	regex	80	^[0-9]+\.arn\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	7.fra.pch	1	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811470	.fr	g.ext.nic.fr	194.0.36.1	fr.	8.fra.pch	2	classified	Frankfurt	DE	EU	high	regex	80	^[0-9]+\.fra\.pch$	PCH city code
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-b-dns02.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-b-dns03.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cecolo-dns02.nic.cz	2	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cecolo-dns03.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cecolo-dns04.nic.cz	2	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cecolo-dns07.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-chile-02.nic.cz	1	classified		CL	Other non EU	medium	regex	100	^dns-chile-.+\.nic\.cz$	Chile infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cra-dns01.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cra-dns03.nic.cz	2	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cra-dns04.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cra-dns07.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cra-dns08.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-cra-dns10.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-decix-dns01.nic.cz	8	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-decix-dns02.nic.cz	13	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-decix-dns03.nic.cz	12	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-jinx-02.nic.cz	22	classified	Johannesburg	ZA	Other non EU	medium	regex	100	^dns-jinx-.+\.nic\.cz$	JINX infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-mix-01.nic.cz	1	classified	Milan	IT	EU	medium	regex	100	^dns-mix-.+\.nic\.cz$	Milan exchange infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-sixusa-dns01.nic.cz	3	classified		US	Other non EU	medium	regex	100	^dns-sixusa-.+\.nic\.cz$	SIX USA infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-sixusa-dns02.nic.cz	2	classified		US	Other non EU	medium	regex	100	^dns-sixusa-.+\.nic\.cz$	SIX USA infrastructure hint
+173811471	.cz	a.ns.nic.cz	194.0.12.1	cz.	dns-vodafone-01.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-b-dns01.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-b-dns02.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-b-dns04.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cecolo-dns01.nic.cz	2	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cecolo-dns03.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cecolo-dns04.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cecolo-dns07.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cosmonova-01.nic.cz	10	classified	Prague	CZ	EU	medium	regex	100	^dns-cosmonova-.+\.nic\.cz$	Czech provider hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cra-dns02.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cra-dns04.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-cra-dns07.nic.cz	2	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-decix-dns01.nic.cz	7	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-decix-dns02.nic.cz	9	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-decix-dns03.nic.cz	10	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-icann-02.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-jinx-01.nic.cz	7	classified	Johannesburg	ZA	Other non EU	medium	regex	100	^dns-jinx-.+\.nic\.cz$	JINX infrastructure hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-netnod-01.nic.cz	14	classified	Stockholm	SE	EU	medium	regex	100	^dns-netnod-.+\.nic\.cz$	Netnod infrastructure hint
+173811472	.cz	b.ns.nic.cz	194.0.13.1	cz.	dns-sgix-01.nic.cz	8	classified	Singapore	SG	Other non EU	medium	regex	100	^dns-sgix-.+\.nic\.cz$	SGIX infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-ixbr-01.nic.cz	2	classified		BR	Other non EU	medium	regex	100	^dns-ixbr-.+\.nic\.cz$	IX.br infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-jpnap-02.nic.cz	1	classified	Tokyo	JP	Other non EU	medium	regex	100	^dns-jpnap-.+\.nic\.cz$	JPNAP infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-linx-dns01.nic.cz	18	classified	London	GB	UK	medium	regex	100	^dns-linx-.+\.nic\.cz$	LINX infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-linx-dns02.nic.cz	13	classified	London	GB	UK	medium	regex	100	^dns-linx-.+\.nic\.cz$	LINX infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-linx-dns03.nic.cz	13	classified	London	GB	UK	medium	regex	100	^dns-linx-.+\.nic\.cz$	LINX infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-nixsk-01.nic.cz	5	classified	Bratislava	SK	EU	medium	regex	100	^dns-nixsk-.+\.nic\.cz$	NIX.SK infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-tmobile-01.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-vix-dns01.nic.cz	7	classified	Vienna	AT	EU	medium	regex	100	^dns-vix-.+\.nic\.cz$	Vienna Internet Exchange infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-vix-dns02.nic.cz	5	classified	Vienna	AT	EU	medium	regex	100	^dns-vix-.+\.nic\.cz$	Vienna Internet Exchange infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-vix-dns03.nic.cz	12	classified	Vienna	AT	EU	medium	regex	100	^dns-vix-.+\.nic\.cz$	Vienna Internet Exchange infrastructure hint
+173811473	.cz	c.ns.nic.cz	194.0.14.1	cz.	dns-vodafone-01.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-b-dns01.nic.cz	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns01.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns02.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns03.nic.cz	2	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns04.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns05.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns06.nic.cz	2	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns07.nic.cz	2	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns08.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns09.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cecolo-dns10.nic.cz	1	classified	Vienna	AT	EU	medium	regex	100	^dns-cecolo-.+\.nic\.cz$	Austrian provider hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns01.nic.cz	2	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns02.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns04.nic.cz	1	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns05.nic.cz	2	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns06.nic.cz	2	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns07.nic.cz	2	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns08.nic.cz	4	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-cra-dns10.nic.cz	3	low_confidence	Prague	CZ	EU	low	regex	100	^dns-cra-.+\.nic\.cz$	Czech looking provider hint, excluded from main denominator
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-decix2-01.nic.cz	23	classified	Frankfurt	DE	EU	medium	regex	100	^dns-decix[0-9]?-.+\.nic\.cz$	DE CIX infrastructure hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-icann-01.nic.cz	3	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-linx-dns02.nic.cz	4	classified	London	GB	UK	medium	regex	100	^dns-linx-.+\.nic\.cz$	LINX infrastructure hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-linx-dns03.nic.cz	1	classified	London	GB	UK	medium	regex	100	^dns-linx-.+\.nic\.cz$	LINX infrastructure hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-sgix-02.nic.cz	15	classified	Singapore	SG	Other non EU	medium	regex	100	^dns-sgix-.+\.nic\.cz$	SGIX infrastructure hint
+173811474	.cz	d.ns.nic.cz	193.29.206.1	cz.	dns-sixusa-dns01.nic.cz	1	classified		US	Other non EU	medium	regex	100	^dns-sixusa-.+\.nic\.cz$	SIX USA infrastructure hint
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.amx	4	classified	Amsterdam	NL	EU	medium	regex	90	^s[23]\.amx$	Shared operator short location label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.bah	2	classified	Manama	BH	Other non EU	high	regex	90	^s[23]\.bah$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.bnx	6	classified	Brussels	BE	EU	medium	regex	90	^s[23]\.bnx$	BNIX or Brussels style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.bts	2	classified	Bratislava	SK	EU	high	regex	90	^s[23]\.bts$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.cdg	1	classified	Paris	FR	EU	high	regex	90	^s[23]\.cdg$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.cmx	1	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.del	1	classified	Delhi	IN	Other non EU	high	regex	90	^s[23]\.del$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.dex	8	classified	Frankfurt	DE	EU	medium	regex	90	^s[23]\.dex$	DE CIX style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.fix	1	classified	Helsinki	FI	EU	medium	regex	90	^s[23]\.fix$	Finnish exchange style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.hel	1	classified	Helsinki	FI	EU	high	regex	90	^s[23]\.hel$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.jak	2	classified	Jakarta	ID	Other non EU	high	regex	90	^s[23]\.jak$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.lju	3	classified	Ljubljana	SI	EU	high	regex	90	^s[23]\.lju$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.lnx	1	classified	London	GB	UK	medium	regex	90	^s[23]\.lnx$	LINX shorthand
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.lon	1	classified	London	GB	UK	high	regex	90	^s[23]\.lon$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.lux	1	classified	Luxembourg	LU	EU	high	regex	90	^s[23]\.lux$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.mex	1	classified	Mexico City	MX	Other non EU	high	regex	90	^s[23]\.mex$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.mix	4	classified	Milan	IT	EU	medium	regex	90	^s[23]\.mix$	Milan exchange style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.rix	1	classified	Riga	LV	EU	high	regex	90	^s[23]\.rix$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.rox	5	classified	Bucharest	RO	EU	medium	regex	90	^s[23]\.rox$	Romanian exchange style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.sof	6	classified	Sofia	BG	EU	high	regex	90	^s[23]\.sof$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.stm	2	classified	Stockholm	SE	EU	medium	regex	90	^s[23]\.stm$	Stockholm style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.sto	3	classified	Stockholm	SE	EU	high	regex	90	^s[23]\.sto$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.tll	3	classified	Tallinn	EE	EU	high	regex	90	^s[23]\.tll$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.tok	1	classified	Tokyo	JP	Other non EU	high	regex	90	^s[23]\.tok$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.vno	4	classified	Vilnius	LT	EU	high	regex	90	^s[23]\.vno$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.wie	3	classified	Vienna	AT	EU	medium	regex	90	^s[23]\.wie$	Wien style label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.yvr	7	classified	Vancouver	CA	Other non EU	high	regex	90	^s[23]\.yvr$	City code in shared operator label
+173811475	.at	j.ns.at	194.146.106.50	at.	s2.zrh	3	classified	Zurich	CH	CH	high	regex	90	^s[23]\.zrh$	City code in shared operator label
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-ams1	2	classified	Amsterdam	NL	EU	high	regex	30	^tld-all-ams[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-amx1@53010	4	classified	Amsterdam	NL	EU	medium	regex	30	^tld-all-amx[0-9](?:@.*)?$	AMX interpreted as Amsterdam exchange style label
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-ber1@53010	1	classified	Berlin	DE	EU	high	regex	30	^tld-all-ber[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-blr1@53010	1	classified	Bengaluru	IN	Other non EU	high	regex	30	^tld-all-blr[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-buc1@53010	6	classified	Bucharest	RO	EU	high	regex	30	^tld-all-buc[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-bud1@53010	3	classified	Budapest	HU	EU	high	regex	30	^tld-all-bud[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-fam1@53010	10	classified	Frankfurt	DE	EU	medium	regex	30	^tld-all-fam[0-9](?:@.*)?$	Frankfurt am Main style label
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-gnf1@53010	1	classified	Geneva	CH	CH	medium	regex	30	^tld-all-gnf[0-9](?:@.*)?$	Geneva style label
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-lis1@53010	1	classified	Lisbon	PT	EU	high	regex	30	^tld-all-lis[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-lju1@53010	3	classified	Ljubljana	SI	EU	high	regex	30	^tld-all-lju[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-lon1@53010	1	classified	London	GB	UK	high	regex	30	^tld-all-lon[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-lux1@53010	1	classified	Luxembourg	LU	EU	high	regex	30	^tld-all-lux[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-mad1@53010	4	classified	Madrid	ES	EU	high	regex	30	^tld-all-mad[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-mel1@53010	1	classified	Melbourne	AU	Other non EU	high	regex	30	^tld-all-mel[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-mil1@53010	5	classified	Milan	IT	EU	high	regex	30	^tld-all-mil[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-par1@53010	4	classified	Paris	FR	EU	high	regex	30	^tld-all-par[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-prs1@53010	2	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-rig1	7	classified	Riga	LV	EU	high	regex	30	^tld-all-rig[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-sto1@53010	6	classified	Stockholm	SE	EU	high	regex	30	^tld-all-sto[0-9](?:@.*)?$	City code in tld-all NSID
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-tam1@53010	2	classified	Tampere	FI	EU	medium	regex	30	^tld-all-tam[0-9](?:@.*)?$	Tampere style label
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-vnn1@53010	10	classified	Vienna	AT	EU	medium	regex	30	^tld-all-vnn[0-9](?:@.*)?$	Vienna style label
+173811476	.at	r.ns.at	194.0.25.10	at.	tld-all-waw1@53010	3	classified	Warsaw	PL	EU	high	regex	30	^tld-all-waw[0-9](?:@.*)?$	City code in tld-all NSID
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-BRA-06-at	2	unknown			Unknown	unknown				No defensible NSID mapping rule matched
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-FRA-05-at	18	classified	Frankfurt	DE	EU	high	regex	110	^id-02-FRA-[0-9]+-at$	Univie style explicit city code
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-IX-02-at	27	classified		AT	EU	medium	regex	110	^id-02-IX-[0-9]+-at$	IX likely local exchange style label, region only
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-LON-10-at	2	classified	London	GB	UK	high	regex	110	^id-02-LON-[0-9]+-at$	Univie style explicit city code
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-PRG-15-at	4	classified	Prague	CZ	EU	high	regex	110	^id-02-PRG-[0-9]+-at$	Univie style explicit city code
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-STO-03-at	7	classified	Stockholm	SE	EU	high	regex	110	^id-02-STO-[0-9]+-at$	Univie style explicit city code
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-STR-11-at	14	classified	Stuttgart	DE	EU	high	regex	110	^id-02-STR-[0-9]+-at$	Univie style explicit city code
+173811477	.at	ns2.univie.ac.at	192.92.125.2	at.	id-02-SYD-16-at	3	classified	Sydney	AU	Other non EU	high	regex	110	^id-02-SYD-[0-9]+-at$	Univie style explicit city code

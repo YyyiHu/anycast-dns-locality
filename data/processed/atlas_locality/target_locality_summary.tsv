@@ -1,0 +1,21 @@
+measurement_id	cctld	zone	nameserver	target	query_argument	analysis_role	valid_observations	main_classifiable	main_classifiable_share	high_confidence	medium_confidence	low_confidence	unknown	eu	uk	ch	other_non_eu	non_eu	eu_fraction	non_eu_fraction	status_counts
+173811458	.be	be	c.nsset.be	194.0.43.1	be.	Measured comparison	78	78	1.0000	78	0	0	0	35	43	0	0	43	0.4487	0.5513	classified=78
+173811459	.be	be	y.nsset.be	120.29.253.8	be.	Main	78	78	1.0000	78	0	0	0	71	5	0	2	7	0.9103	0.0897	classified=78
+173811460	.be	be	z.nsset.be	194.0.25.36	be.	Main	78	75	0.9615	48	27	0	3	71	1	1	2	4	0.9467	0.0533	classified=75; unknown=3
+173811461	.nl	nl	ns1.dns.nl	194.0.28.53	nl.	Main	78	78	1.0000	69	9	0	0	77	0	0	1	1	0.9872	0.0128	classified=78
+173811462	.nl	nl	ns3.dns.nl	194.0.25.24	nl.	Main	78	76	0.9744	49	27	0	2	72	1	1	2	4	0.9474	0.0526	classified=76; unknown=2
+173811463	.nl	nl	ns4.dns.nl	185.159.199.200	nl.	Main	78	78	1.0000	78	0	0	0	56	21	0	1	22	0.7179	0.2821	classified=78
+173811464	.de	de	a.nic.de	194.0.0.53	de.	Main	77	77	1.0000	77	0	0	0	74	1	0	2	3	0.9610	0.0390	classified=77
+173811465	.de	de	l.de.net	77.67.63.105	de.	Measured comparison	78	78	1.0000	78	0	0	0	54	24	0	0	24	0.6923	0.3077	classified=78
+173811466	.de	de	n.de.net	194.146.107.6	de.	Main	78	77	0.9872	44	33	0	1	58	2	4	13	19	0.7532	0.2468	classified=77; unknown=1
+173811467	.de	de	z.nic.de	194.246.96.1	de.	Main	78	78	1.0000	78	0	0	0	72	0	0	6	6	0.9231	0.0769	classified=78
+173811468	.fr	fr	d.nic.fr	194.0.9.1	fr.	Main	78	78	1.0000	58	20	0	0	55	2	0	21	23	0.7051	0.2949	classified=78
+173811469	.fr	fr	f.ext.nic.fr	194.146.106.46	fr.	Main	78	77	0.9872	44	33	0	1	58	2	3	14	19	0.7532	0.2468	classified=77; unknown=1
+173811470	.fr	fr	g.ext.nic.fr	194.0.36.1	fr.	Main	78	78	1.0000	78	0	0	0	74	1	1	2	4	0.9487	0.0513	classified=78
+173811471	.cz	cz	a.ns.nic.cz	194.0.12.1	cz.	Main	78	68	0.8718	0	68	7	3	40	0	0	28	28	0.5882	0.4118	classified=68; low_confidence=7; unknown=3
+173811472	.cz	cz	b.ns.nic.cz	194.0.13.1	cz.	Main	78	70	0.8974	0	70	4	4	55	0	0	15	15	0.7857	0.2143	classified=70; low_confidence=4; unknown=4
+173811473	.cz	cz	c.ns.nic.cz	194.0.14.1	cz.	Main	78	76	0.9744	0	76	0	2	29	44	0	3	47	0.3816	0.6184	classified=76; unknown=2
+173811474	.cz	cz	d.ns.nic.cz	193.29.206.1	cz.	Main	78	57	0.7308	0	57	17	4	36	5	0	16	21	0.6316	0.3684	classified=57; low_confidence=17; unknown=4
+173811475	.at	at	j.ns.at	194.146.106.50	at.	Main	78	77	0.9872	43	34	0	1	58	2	3	14	19	0.7532	0.2468	classified=77; unknown=1
+173811476	.at	at	r.ns.at	194.0.25.10	at.	Main	78	76	0.9744	49	27	0	2	72	1	1	2	4	0.9474	0.0526	classified=76; unknown=2
+173811477	.at	at	ns2.univie.ac.at	192.92.125.2	at.	Main	77	75	0.9740	48	27	0	2	70	2	0	3	5	0.9333	0.0667	classified=75; unknown=2
