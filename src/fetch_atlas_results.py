@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 CREATED_FILE = Path("results/atlas/created_measurements.json")
 PLAN_FILE = Path("results/atlas/measurement_plan.json")
 RAW_RESULTS_DIR = Path("data/raw/atlas/results")
-INVENTORY_FILE = Path("data/processed/atlas_fetch_inventory.tsv")
+INVENTORY_FILE = Path("data/processed/atlas_dns_results/atlas_fetch_inventory.tsv")
 
 ATLAS_BASE_URL = "https://atlas.ripe.net/api/v2"
 TIMEOUT_SECONDS = 30

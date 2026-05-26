@@ -13,9 +13,9 @@ import dns.rcode
 CREATED_FILE = Path("results/atlas/created_measurements.json")
 RAW_RESULTS_DIR = Path("data/raw/atlas/results")
 
-OBSERVATIONS_FILE = Path("data/processed/atlas_dns_observations.tsv")
-NSID_VALUES_FILE = Path("data/processed/nsid_values_observed.tsv")
-SUMMARY_FILE = Path("data/processed/atlas_dns_parse_summary.tsv")
+OBSERVATIONS_FILE = Path("data/processed/atlas_dns_results/atlas_dns_observations.tsv")
+NSID_VALUES_FILE = Path("data/processed/atlas_dns_results/nsid_values_observed.tsv")
+SUMMARY_FILE = Path("data/processed/atlas_dns_results/atlas_dns_parse_summary.tsv")
 
 NSID_OPTION_CODE = 3
 

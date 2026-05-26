@@ -5,7 +5,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-OBSERVATIONS_FILE = Path("data/processed/atlas_dns_observations.tsv")
+OBSERVATIONS_FILE = Path("data/processed/atlas_dns_results/atlas_dns_observations.tsv")
 TARGETS_FILE = Path("data/input/active_measurement_targets.tsv")
 RULES_FILE = Path("data/input/nsid_mapping_rules.tsv")
 
