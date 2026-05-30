@@ -12,3 +12,6 @@ results/atlas/*.json
 
 data/raw/**
 !data/raw/.gitkeep
+
+data/input/maps/ne_50m_admin_0_countries/
+data/input/maps/*.zip
