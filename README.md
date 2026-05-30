@@ -13,6 +13,10 @@ data/input
   Fixed campaign inputs:
   active measurement targets, generated EU probe panel, and NSID mapping rules.
 
+data/input/maps
+  Downloaded map boundary data used for geographic figures.
+  The downloaded Natural Earth map files are ignored by Git and can be regenerated.
+
 data/raw
   Raw collected data, including local screening logs and RIPE Atlas result JSON files.
 
@@ -38,8 +42,11 @@ results/figures
 src
   Python scripts for measurement planning, fetching, parsing, classification, and result generation.
 
+src/figures
+  Python figure generation pipeline for result figures.
+
 tools
-  Helper scripts for local checks.
+  Helper scripts for local checks and external data setup.
 ```
 
 ## Pipeline
@@ -64,15 +71,21 @@ tools
 7. Parse raw Atlas DNS results with `src/parse_atlas_dns_results.py`.
 
 8. Classify SOA NSID values with `src/classify_nsid_locations.py`.
-   - Output classes: `EU`, `UK`, `CH`, and `Other non-EU`.
+   - Main region classes: `EU`, `UK`, `CH`, and `Other non-EU`.
+   - Low confidence and unknown mappings are excluded from the main classifiable denominator.
 
-9. Generate thesis figures from the processed result files.
+9. Download map boundary data with `tools/download_map_data.sh`.
+
+10. Generate figures with `src/figures/make_thesis_figures.py`.
 
 ## Main scripts
 
 ```text
 tools/screen_cctlds.sh
   Screens candidate ccTLD authoritative IPv4 targets using SOA NSID and CHAOS TXT queries.
+
+tools/download_map_data.sh
+  Downloads Natural Earth country boundary data used for the probe country map.
 
 src/fetch_laces_pops_for_active_targets.py
   Fetches LACeS prefix and PoP context for active targets.
@@ -91,6 +104,31 @@ src/parse_atlas_dns_results.py
 
 src/classify_nsid_locations.py
   Applies NSID mapping rules and produces locality classification outputs.
+
+src/figures/make_thesis_figures.py
+  Generates result figures from processed locality outputs.
+```
+
+## Figure scripts
+
+```text
+src/figures/common.py
+  Shared paths, colors, plotting style, and data loading helpers.
+
+src/figures/plot_target_locality.py
+  Generates target-level EU locality and regional composition figures.
+
+src/figures/plot_cctld_locality.py
+  Generates ccTLD-level regional composition figure.
+
+src/figures/plot_concentration.py
+  Generates non-EU concentration figure.
+
+src/figures/plot_probe_country_map.py
+  Generates source probe country map.
+
+src/figures/make_thesis_figures.py
+  Runs the full figure generation pipeline.
 ```
 
 ## Main outputs
@@ -112,20 +150,53 @@ data/processed/atlas_locality/target_locality_summary.tsv
 data/processed/atlas_locality/overall_classification_summary.tsv
 data/processed/atlas_locality/nsid_classification_summary.tsv
 data/processed/atlas_locality/nsid_unclassified_values.tsv
+
+results/figures/target_eu_locality_ranked.pdf
+results/figures/target_region_composition.pdf
+results/figures/cctld_region_composition.pdf
+results/figures/non_eu_concentration.pdf
+results/figures/probe_country_non_eu_map.pdf
 ```
 
-## Run
+## Setup
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
+```
 
+Creating RIPE Atlas measurements requires an Atlas API key in the local environment.
+
+## Run the measurement pipeline
+
+```bash
 bash tools/screen_cctlds.sh
+
 python src/fetch_laces_pops_for_active_targets.py
 python src/build_atlas_dns_dry_run.py
 python src/create_atlas_measurements.py
 python src/fetch_atlas_results.py
 python src/parse_atlas_dns_results.py
 python src/classify_nsid_locations.py
+```
+
+## Run the figure generation pipeline
+
+First download the map boundary data:
+
+```bash
+bash tools/download_map_data.sh
+```
+
+Then generate the thesis figures:
+
+```bash
+python src/figures/make_thesis_figures.py
+```
+
+The generated PDF figures are written to:
+
+```text
+results/figures
 ```
