@@ -24,12 +24,6 @@ REGION_COLORS = {
     "Other non-EU": "#7D8790",
 }
 
-LOCALITY_COLORS = {
-    "High EU locality": "#2F6DAE",
-    "Mixed locality": "#F2A35E",
-    "Low EU locality": "#D95F02",
-}
-
 MAP_BINS = [0, 10, 20, 30, 40, 100]
 MAP_COLORS = ["#FFF5EB", "#FDD0A2", "#FDAE6B", "#F16913", "#A63603"]
 MAP_LABELS = ["0 to 10%", "10 to 20%", "20 to 30%", "30 to 40%", "40%+"]
@@ -41,23 +35,19 @@ def setup_style() -> None:
             "figure.dpi": 150,
             "savefig.dpi": 300,
             "savefig.facecolor": "white",
-            # Closer to ACM paper typography than the default sans-serif.
             "font.family": "serif",
             "font.serif": ["Times New Roman", "DejaVu Serif", "Times"],
-            # Small but readable after scaling in LaTeX.
             "font.size": 8,
             "axes.labelsize": 8,
             "xtick.labelsize": 7,
             "ytick.labelsize": 7,
             "legend.fontsize": 7,
-            # Clean academic figure style.
             "axes.spines.top": False,
             "axes.spines.right": False,
             "axes.grid": False,
             "axes.linewidth": 0.8,
             "xtick.major.width": 0.8,
             "ytick.major.width": 0.8,
-            # Embed fonts properly in vector PDFs.
             "pdf.fonttype": 42,
             "ps.fonttype": 42,
         }
@@ -83,14 +73,6 @@ def normalize_region(value: object) -> str:
         return "Other non-EU"
 
     return text
-
-
-def locality_tier(eu_percent: float) -> str:
-    if eu_percent >= 90:
-        return "High EU locality"
-    if eu_percent >= 70:
-        return "Mixed locality"
-    return "Low EU locality"
 
 
 def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
