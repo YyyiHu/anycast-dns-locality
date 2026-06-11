@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -7,10 +9,14 @@ ROOT = Path(__file__).resolve().parents[2]
 
 ATLAS_DIR = ROOT / "data" / "processed" / "atlas_locality"
 INPUT_DIR = ROOT / "data" / "input"
+
 OUTPUT_DIR = ROOT / "results" / "figures"
+TABLE_OUTPUT_DIR = ROOT / "results" / "tables"
+TEXT_OUTPUT_DIR = ROOT / "results" / "text"
 
 TARGET_SUMMARY_FILE = ATLAS_DIR / "target_locality_summary.tsv"
 OBSERVATIONS_FILE = ATLAS_DIR / "dns_observations_classified.tsv"
+NSID_SUMMARY_FILE = ATLAS_DIR / "nsid_classification_summary.tsv"
 PROBE_PANEL_FILE = INPUT_DIR / "eu_probe_panel.tsv"
 
 MAP_FILE = INPUT_DIR / "maps" / "ne_50m_admin_0_countries" / "ne_50m_admin_0_countries.shp"
@@ -54,13 +60,43 @@ def setup_style() -> None:
     )
 
 
-def save_figure(name: str, fig=None) -> None:
+def ensure_output_dirs() -> None:
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    TABLE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    TEXT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def save_figure(name: str, fig=None, save_png: bool = False) -> None:
     if fig is None:
         fig = plt.gcf()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT_DIR / f"{name}.pdf", bbox_inches="tight", pad_inches=0.06)
+
+    if save_png:
+        fig.savefig(
+            OUTPUT_DIR / f"{name}.png",
+            bbox_inches="tight",
+            pad_inches=0.06,
+            dpi=300,
+        )
+
     plt.close(fig)
+
+
+def save_table(df: pd.DataFrame, name: str) -> None:
+    TABLE_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    df.to_csv(TABLE_OUTPUT_DIR / f"{name}.tsv", sep="\t", index=False)
+
+
+def save_text(name: str, content: str) -> None:
+    TEXT_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    (TEXT_OUTPUT_DIR / name).write_text(content, encoding="utf-8")
+
+
+def require_file(path: Path) -> None:
+    if not path.exists():
+        raise FileNotFoundError(f"Required file not found: {path}")
 
 
 def normalize_region(value: object) -> str:
@@ -75,10 +111,13 @@ def normalize_region(value: object) -> str:
     return text
 
 
-def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    target_df = pd.read_csv(TARGET_SUMMARY_FILE, sep="\t")
-    obs_df = pd.read_csv(OBSERVATIONS_FILE, sep="\t")
-    probe_df = pd.read_csv(PROBE_PANEL_FILE, sep="\t")
+def read_tsv(path: Path) -> pd.DataFrame:
+    require_file(path)
+    return pd.read_csv(path, sep="\t")
+
+
+def load_target_summary() -> pd.DataFrame:
+    target_df = read_tsv(TARGET_SUMMARY_FILE)
 
     if "eu_fraction" not in target_df.columns:
         target_df["eu_fraction"] = target_df["eu"] / target_df["main_classifiable"]
@@ -89,8 +128,28 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     target_df["target_label"] = target_df["nameserver"] + " (" + target_df["cctld"] + ")"
     target_df["eu_percent"] = target_df["eu_fraction"] * 100
 
+    return target_df
+
+
+def load_observations() -> pd.DataFrame:
+    obs_df = read_tsv(OBSERVATIONS_FILE)
     obs_df["probe_id"] = obs_df["probe_id"].astype(int)
+    obs_df["region_clean"] = obs_df["region_class"].apply(normalize_region)
+
+    return obs_df
+
+
+def load_probe_panel() -> pd.DataFrame:
+    probe_df = read_tsv(PROBE_PANEL_FILE)
     probe_df["probe_id"] = probe_df["probe_id"].astype(int)
+
+    return probe_df
+
+
+def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    target_df = load_target_summary()
+    obs_df = load_observations()
+    probe_df = load_probe_panel()
 
     obs_df = obs_df.merge(
         probe_df[["probe_id", "country", "asn_v4", "is_anchor"]],
@@ -98,9 +157,24 @@ def load_data() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         how="left",
     )
 
-    obs_df["region_clean"] = obs_df["region_class"].apply(normalize_region)
-
     return target_df, obs_df, probe_df
+
+
+def load_nsid_summary() -> pd.DataFrame:
+    summary_df = read_tsv(NSID_SUMMARY_FILE)
+
+    summary_df["count"] = (
+        pd.to_numeric(
+            summary_df["count"],
+            errors="coerce",
+        )
+        .fillna(0)
+        .astype(int)
+    )
+
+    summary_df["region_clean"] = summary_df["region_class"].apply(normalize_region)
+
+    return summary_df
 
 
 def main_classifiable_observations(obs_df: pd.DataFrame) -> pd.DataFrame:
@@ -108,3 +182,17 @@ def main_classifiable_observations(obs_df: pd.DataFrame) -> pd.DataFrame:
         (obs_df["classification_status"] == "classified")
         & (obs_df["classification_confidence"].isin(["high", "medium"]))
     ].copy()
+
+
+def main_classifiable_summary(summary_df: pd.DataFrame) -> pd.DataFrame:
+    return summary_df[
+        (summary_df["classification_status"] == "classified")
+        & (summary_df["classification_confidence"].isin(["high", "medium"]))
+    ].copy()
+
+
+def percentage(value: int | float, total: int | float) -> float:
+    if total == 0:
+        return 0.0
+
+    return round(value / total * 100, 1)
