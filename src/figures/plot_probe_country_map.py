@@ -22,8 +22,9 @@ from shapely.geometry import box
 
 COUNTRY_CODE_COLUMN_CANDIDATES = ["ISO_A2_EH", "ISO_A2"]
 
-REQUIRED_CASE_STUDY_COUNTRIES = ["PT", "ES", "DK", "LV", "BE", "IE", "IT", "FR"]
-MAX_CASE_STUDY_COUNTRIES = 8
+MAIN_SANKEY_COUNTRY = "PT"
+APPENDIX_CASE_STUDY_COUNTRIES = ["ES", "DK", "FR", "PL", "LV", "BE", "IE", "IT"]
+MAX_APPENDIX_CASE_STUDY_COUNTRIES = 8
 
 COUNTRY_NAMES = {
     "AT": "Austria",
@@ -100,14 +101,14 @@ DESTINATION_COLORS = {
     "Singapore": "#E15759",
     "Canada": "#76B7B2",
     "India": "#EDC948",
-    "Indonesia": "#FF9DA7",
+    "Indonesia": "#303841",
     "Australia": "#9C755F",
     "Japan": "#7F7F7F",
     "Bahrain": "#1A312C",
     "China": "#17BECF",
     "Russia": "#8C6D31",
     "United Arab Emirates": "#6B6ECF",
-    "Brazil": "#D37295",
+    "Brazil": "#810B38",
     "Chile": "#BCBD22",
     "Mexico": "#A6761D",
 }
@@ -164,7 +165,9 @@ def destination_color(destination: str) -> str:
     if destination in DESTINATION_COLORS:
         return DESTINATION_COLORS[destination]
 
-    index = sum(ord(character) for character in destination) % len(FALLBACK_DESTINATION_COLORS)
+    index = sum(ord(character) for character in destination) % len(
+        FALLBACK_DESTINATION_COLORS,
+    )
 
     return FALLBACK_DESTINATION_COLORS[index]
 
@@ -298,8 +301,12 @@ def read_europe_boundaries(country_codes: list[str]) -> gpd.GeoDataFrame:
     world = gpd.read_file(MAP_FILE)
 
     country_column = next(
-        column for column in COUNTRY_CODE_COLUMN_CANDIDATES if column in world.columns
+        (column for column in COUNTRY_CODE_COLUMN_CANDIDATES if column in world.columns),
+        None,
     )
+
+    if country_column is None:
+        raise ValueError(f"Expected one of {COUNTRY_CODE_COLUMN_CANDIDATES} in map file columns.")
 
     countries = world[world[country_column].isin(country_codes)].copy()
     countries["country"] = countries[country_column]
@@ -454,30 +461,19 @@ def non_eu_observations(
     return df.dropna(subset=["destination_country"])
 
 
-def add_selection_reason(
-    selected: dict[str, list[str]],
-    country: str,
-    reason: str,
-) -> None:
-    if country not in selected:
-        selected[country] = []
-
-    if reason not in selected[country]:
-        selected[country].append(reason)
-
-
-def select_case_study_countries(
-    stats: pd.DataFrame,
+def select_sankey_countries(
+    candidate_countries: list[str],
     non_eu_df: pd.DataFrame,
-) -> dict[str, list[str]]:
-    selected: dict[str, list[str]] = {}
+    limit: int | None = None,
+) -> list[str]:
     countries_with_non_eu = set(non_eu_df["probe_country"])
 
-    for country in REQUIRED_CASE_STUDY_COUNTRIES:
-        if country in countries_with_non_eu:
-            add_selection_reason(selected, country, "selected case study country")
+    selected = [country for country in candidate_countries if country in countries_with_non_eu]
 
-    return dict(list(selected.items())[:MAX_CASE_STUDY_COUNTRIES])
+    if limit is not None:
+        return selected[:limit]
+
+    return selected
 
 
 def group_destinations_for_country(
@@ -558,7 +554,7 @@ def add_sankey_flow(
             linewidth=0.28,
             alpha=0.50,
             zorder=1,
-        )
+        ),
     )
 
 
@@ -580,7 +576,7 @@ def plot_single_country_sankey(
     if total != outside_eu_from_stats:
         raise ValueError(
             f"Sankey total mismatch for {probe_country}: "
-            f"{total} flow rows versus {outside_eu_from_stats} country stats."
+            f"{total} flow rows versus {outside_eu_from_stats} country stats.",
         )
 
     destination_count = len(flows)
@@ -631,7 +627,7 @@ def plot_single_country_sankey(
             edgecolor="#666666",
             linewidth=0.42,
             zorder=3,
-        )
+        ),
     )
 
     source_cursor = source_y1
@@ -673,7 +669,7 @@ def plot_single_country_sankey(
                 edgecolor="0.45",
                 linewidth=0.38,
                 zorder=3,
-            )
+            ),
         )
 
         ax.plot(
@@ -739,6 +735,40 @@ def plot_single_country_sankey(
     ax.set_axis_off()
 
 
+def plot_main_probe_country_sankey(
+    obs_df: pd.DataFrame,
+    probe_df: pd.DataFrame,
+) -> None:
+    stats = country_non_eu_stats(obs_df, probe_df)
+    stats_lookup = country_stats_lookup(stats)
+    non_eu_df = non_eu_observations(obs_df, probe_df)
+
+    if MAIN_SANKEY_COUNTRY not in set(non_eu_df["probe_country"]):
+        raise ValueError(f"No non-EU observations found for {MAIN_SANKEY_COUNTRY}.")
+
+    flows = group_destinations_for_country(non_eu_df, MAIN_SANKEY_COUNTRY)
+
+    fig, ax = plt.subplots(figsize=(4.05, 2.10))
+    plot_single_country_sankey(ax, flows, MAIN_SANKEY_COUNTRY, stats_lookup)
+
+    fig.subplots_adjust(
+        left=0.020,
+        right=0.985,
+        top=0.965,
+        bottom=0.045,
+    )
+
+    save_figure("main_probe_country_non_eu_sankey", fig)
+
+    country_stats = stats_lookup[MAIN_SANKEY_COUNTRY]
+    print(
+        "Main Sankey case study country: "
+        f"{country_name(MAIN_SANKEY_COUNTRY)} ({MAIN_SANKEY_COUNTRY}): "
+        f"{country_stats['outside_eu']} of {country_stats['classifiable']} "
+        f"outside EU ({country_stats['outside_eu_percent']:.1f}%)",
+    )
+
+
 def plot_selected_probe_country_sankeys(
     obs_df: pd.DataFrame,
     probe_df: pd.DataFrame,
@@ -746,19 +776,19 @@ def plot_selected_probe_country_sankeys(
     stats = country_non_eu_stats(obs_df, probe_df)
     stats_lookup = country_stats_lookup(stats)
     non_eu_df = non_eu_observations(obs_df, probe_df)
-    selected = select_case_study_countries(stats, non_eu_df)
 
     non_eu_counts = non_eu_df.groupby("probe_country").size().sort_values(ascending=False)
 
-    available_countries = [country for country in selected if country in non_eu_counts.index]
+    available_countries = select_sankey_countries(
+        APPENDIX_CASE_STUDY_COUNTRIES,
+        non_eu_df,
+        MAX_APPENDIX_CASE_STUDY_COUNTRIES,
+    )
 
     available_countries = sorted(
         available_countries,
         key=lambda country: (-int(non_eu_counts[country]), country),
     )
-
-    if len(available_countries) % 2 == 1:
-        available_countries = available_countries[:-1]
 
     if not available_countries:
         raise ValueError("No non-EU observations found for selected Sankey countries.")
@@ -766,12 +796,14 @@ def plot_selected_probe_country_sankeys(
     columns = 2
     rows = math.ceil(len(available_countries) / columns)
 
-    fig, axes = plt.subplots(rows, columns, figsize=(8.15, 2.55 * rows))
+    fig, axes = plt.subplots(
+        rows,
+        columns,
+        figsize=(8.15, 2.55 * rows),
+        squeeze=False,
+    )
 
-    if hasattr(axes, "flatten"):
-        axes = axes.flatten().tolist()
-    else:
-        axes = [axes]
+    axes = axes.flatten().tolist()
 
     for ax, country in zip(axes, available_countries):
         flows = group_destinations_for_country(non_eu_df, country)
@@ -791,13 +823,13 @@ def plot_selected_probe_country_sankeys(
 
     save_figure("selected_probe_country_non_eu_sankeys", fig)
 
-    print("Selected Sankey case study countries:")
+    print("Appendix Sankey case study countries:")
     for country in available_countries:
         country_stats = stats_lookup[country]
         print(
             f"- {country_name(country)} ({country}): "
             f"{country_stats['outside_eu']} of {country_stats['classifiable']} "
-            f"outside EU ({country_stats['outside_eu_percent']:.1f}%)"
+            f"outside EU ({country_stats['outside_eu_percent']:.1f}%)",
         )
 
 
@@ -807,6 +839,7 @@ def main() -> None:
     _, obs_df, probe_df = load_data()
 
     plot_probe_country_non_eu_map(obs_df, probe_df)
+    plot_main_probe_country_sankey(obs_df, probe_df)
     plot_selected_probe_country_sankeys(obs_df, probe_df)
 
     print("Figures written to results/figures")
