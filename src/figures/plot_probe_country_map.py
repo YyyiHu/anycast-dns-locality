@@ -321,8 +321,13 @@ def read_europe_boundaries(country_codes: list[str]) -> gpd.GeoDataFrame:
     return clipped.to_crs("EPSG:3035")
 
 
-def map_label_text(country: str, value: float) -> str:
-    return f"{country}\n{value:.1f}%"
+def map_label_text(
+    country: str,
+    outside_eu: int,
+    classifiable: int,
+    value: float,
+) -> str:
+    return f"{country}\n{outside_eu}/{classifiable}\n{value:.1f}%"
 
 
 def add_all_country_labels(ax: plt.Axes, europe: gpd.GeoDataFrame) -> None:
@@ -332,6 +337,9 @@ def add_all_country_labels(ax: plt.Axes, europe: gpd.GeoDataFrame) -> None:
 
         if pd.isna(value) or row.geometry.is_empty:
             continue
+
+        outside_eu = int(row["outside_eu"])
+        classifiable = int(row["classifiable"])
 
         point = row.geometry.representative_point()
         dx, dy = LABEL_OFFSETS.get(country, (0, 0))
@@ -351,7 +359,7 @@ def add_all_country_labels(ax: plt.Axes, europe: gpd.GeoDataFrame) -> None:
         ax.text(
             label_x,
             label_y,
-            map_label_text(country, value),
+            map_label_text(country, outside_eu, classifiable, value),
             ha="center",
             va="center",
             fontsize=4.25,
